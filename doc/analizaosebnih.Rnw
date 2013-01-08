@@ -1,0 +1,905 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+% \VignetteIndexEntry{}
+% \VignetteDepends{}
+% \VignettePackage{}
+%\documentclass[a4paper,12pt]{article}
+\usepackage[slovene]{babel}
+\newcommand{\SVNRevision}{$ $Rev: 3 $ $}
+%\newcommand{\SVNDate}{$ $Date:: 2009-02-2#$ $}
+\newcommand{\SVNId}{$ $Id: program.Rnw 3 2009-02-22 17:36:08Z ABlejec $ $}
+%\usepackage{babel}
+%\input{abpkgB}
+%\input{abpkg}
+\input{abBeam}
+\input{abcmd}
+%\input{abpage}
+\usepackage[cp1250]{inputenc}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweaveB}
+\newcommand{\BV}{}
+\newcommand{\EV}{}
+\newcommand{\myemph}[1]{{\color{Sgreen} \textit{#1}}}
+\SweaveOpts{eps=false,prefix.string=./figs/SwPres,concordance=true}
+%\SweaveOpts{echo=false}
+%\usepackage{lmodern}
+%\input{abfont}
+%\SweaveOpts{keep.source=true}
+% ----------------------------------------------------------------
+\title{Analiza podatko študentov biologije\\3. letnik 2011/12}
+\author{Andrej Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+\begin{document}
+\mode<article> {\maketitle}
+\mode<presentation> {\frame{\titlepage}}
+\tableofcontents
+% ----------------------------------------------------------------
+\begin{abstract}
+Študentje biologije so v okviru predmeta Statistika pripravili zbirko podatkov o nekaterih telesnih merah sebe in staršev.
+V tem zapisu so prikazane nekatere možne analize.
+\end{abstract}
+% -------------------------------------------------------------
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+% \setkeys{Gin}{width=0.9\textwidth}
+\setkeys{Gin}{width=0.7\textwidth}
+% ----------------------------------------------------------------
+<<initialize,echo=false,results=hide>>=
+options(width=50)
+library(Hmisc)
+#library(xlsReadWrite)
+@
+
+\tableofcontents
+<<Author:>>=
+###############################################
+##                                           ##
+## (c) Andrej Blejec (andrej.blejec@nib.si)  ##
+##                                           ##
+###############################################
+@
+
+<<>>=
+lfn <- "ST2011.txt"
+@
+Ime datoteke s podatki \Sexpr{lfn}.
+% ----------------------------------------------------------------
+
+\section{Vnos podatkov}
+
+Podatki so bili zbrani na spletni strani predmeta \emph{BI022 Statistika} na sistemu
+\href{http://pouk.bf.uni-lj.si/course/view.php?id=101}{Moodle}. Shranjeni so v datoteki
+\Sexpr{lfn}.
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Vnos podatkov}
+<<>>=
+data <- read.table(file.path("../data",lfn),sep="\t",header=TRUE)
+str(data)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Osnovni, vnešeni podatki
+
+<<>>=
+data
+@
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Vrste spremenljivk}
+Opisne spremenljivke
+<<>>=
+opisne <-which(sapply(data,"class")=="factor")
+length(opisne)
+names(data)[opisne]
+@
+
+Številske spremenljivke
+<<>>=
+stevilske <- which(!sapply(data,"class")=="factor")
+length(stevilske)
+names(data)[stevilske]
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+
+
+\section{Pregled osnovnih podatkov }
+
+Opisna statistika
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisna statistika}
+<<>>=
+summary(data[,1:6])
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisna statistika}
+<<>>=
+summary(data[,7:12])
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Grafièni pregled podatkov
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Grafièni pregled podatkov}
+<<fig=true>>=
+par(mfrow=c(3,3))
+for(i in stevilske) plot(data[,i],main=names(data)[i])
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+Pri zbiranju podatkov so manjkajoèe vrednosti spremenjene v vrednost niè.  Za
+nobeno spremenljivko taka vrednost ni smiselna, zato dobro oznaèuje
+manjkajoèo vrednost. Zaradi enostavnejše analize bomo enote s takimi
+vrednostmi pri katerikoli spremenljivki izloèili.
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Odstranitev enot z manjkajoèimi podatki}
+<<>>=
+nas <- which(apply(data,1,function(x) any(as.numeric(x)==0)))
+nas
+if(length(nas)>0) data <- data[-nas,]
+dim(data)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+Odstranimo še podatke nenavadno starega èloveka in podatke osebe s kratko nogo.
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Odstranitev podatkov }
+Odstranimo podatke prestarega èloveka :)
+<<>>=
+data <- data[data$starost<25,]
+@
+in še enega kratkorokega
+<<>>=
+data <- data[data$roke>50,]
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+Popravimo podatke
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Popravek podatkov}
+<<>>=
+data[,"mati"] <- data[,"mati"]+100*(data[,"mati"]<100)
+data[,"oce"] <- data[,"oce"]+100*(data[,"oce"]<100)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Pri prepisu podatkov iz sistema  Moodle dobijo vrednosti opisnih spremenljivk na koncu nepotreben znak presledek.
+Odstranimo jih lahko z uporabo 'regularnih izrazov' (regular expression).
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Ureditev imen nivojev}
+Odstranimo presledke v vrednostih
+<<>>=
+x <- data[,"majica"]
+levels(x)
+levels(x) <- gsub("(.*) ","\\1",levels(x))
+levels(x)
+@
+\end{frame}
+Neposredna sprememba imen nivojev
+<<>>=
+levels(data[,"spol"]) <- c("zenski","moski")
+levels(data[,"oci"]) <-c("svetle","temne")
+levels(data[,"lasje"])<-c("svetli","temni")
+@
+%% <<<<<<---------------------|
+
+
+Velikost majice je merjena na urejenostni lestvici, zato vrednosti uredimo po velikosti
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Urejenostna merska lestvica}
+
+Spremenimo vrstni red nivojev
+<<>>=
+(data[,"majica"] <-ordered(x,levels=c("XXS","XS","S","M","L","XL")))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+\section{Pregled urejenih podatkov}
+
+<<>>=
+data
+@
+
+\subsection{Opisna statistika}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisna statistika}
+<<>>=
+summary(data[,1:6])
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisna statistika}
+<<>>=
+summary(data[,7:12])
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+\subsection{Porazdelitve podatkov}
+
+Porazdelitve opisnih spremenljivk
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Porazdelitve opisnih spremenljivk}
+<<fig=true,echo=false>>=
+par(mfrow=c(2,2))
+for(i in opisne) plot(data[,i],main=names(data)[i],xlab=names(data)[i],col="lightblue")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+Porazdelitve številskih spremenljivk
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Porazdelitve številskih spremenljivk}
+<<fig=true,echo=false>>=
+par(mfrow=c(3,3))
+for(i in stevilske) hist(data[,i],main=names(data)[i],xlab=names(data)[i],col="lightblue")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Omogoèimo neposredno rabo spremenljivk.
+
+<<>>=
+attach(data)
+@
+\clearpage
+\section{Testiranje hipotez}
+
+\subsection{Ali so fantje veèji od deklet?}
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Porazdelitvi}
+<<boxvis,fig=true,echo=false>>=
+boxplot(visina~spol, col=c("pink","lightblue"),ylab="visina")
+rug(visina[spol=="zenski"],side=2,col="pink",lwd=2)
+rug(visina[!spol=="zenski"],side=4,,col="lightblue",lwd=2)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Porazdelitvi - R ukazi}
+<<>>=
+<<boxvis>>
+@
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisni pregled}
+<<>>=
+y <- visina
+(n <- tapply(y,spol,length))
+(xbar <- tapply(y,spol,mean))
+(s <- tapply(y,spol,sd))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Ali sta varianci znaèilno razlièni?}
+<<>>=
+alpha <- 0.01
+(v <- sort(s^2))
+ns <- as.vector(n[order(s)]) # da se znebim imen
+(F <- as.vector(v[2]/v[1]))
+(df1 <-ns[2]-1)
+(df2 <-ns[1]-1)
+(F.krit <- qf(1-alpha,df1,df2))
+(p <- 1-pf(F,df1,df2))
+if(F<F.krit) cat("Varianci NISTA statistièno znaèilno razlièni (p =",round(p,3),").\n") else
+cat("Varianci STA  statistièno zanèilno razlièni (p <",alpha,") (p =",round(p,3),").\n")
+@
+
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Ali sta varianci znaèilno razlièni?}
+<<critvisF,fig=true,echo=FALSE>>=
+x <- seq(0,max(F,F.krit)*1.5,length=100)
+plot(x,df(x,df1,df2),type="l",xlab="F",axes=FALSE)
+axis(1)
+axis(2)
+abline(h=0)
+abline(v=F,lwd=3)
+mtext("F",side=3,line=1,at=F)
+abline(v=F.krit,col="red",lwd=3)
+mtext("F.krit",side=3,line=0,at=F.krit,col="red")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Kako smo narisali sliko?}
+<<>>=
+<<critvisF>>
+
+@
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Studentov t-test razlike povpreèij
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Hipoteze in delni rezultati}
+Uredimo vrstni red delnih rezultatov za test hipotez
+$$H_0: \mu_{moski}=\mu_{zenski}+\Delta$$
+$$H_1: \mu_{moski}>\mu_{zenski}+\Delta$$
+<<>>=
+ord <- c("moski","zenski")
+(xbar <- as.vector(xbar[ord]))
+(s <- as.vector(s[ord]))
+(n <- as.vector(n[ord]))
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Stopnja tveganja in kritiène vrednosti}
+<<>>=
+alpha <- 0.01
+delta <- 0
+(df <- n[1]+n[2]-2)
+(t.krit <- qt(1-alpha,df))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Studentov t-test}
+<<>>=
+xbar[1]-xbar[2]
+s2 <- ((n[1]-1)*s[1]^2+(n[2]-1)*s[2]^2)/(n[1]+n[2]-2)
+(t <- (xbar[1]-xbar[2]-delta)/sqrt(s2)*sqrt(n[1]*n[2]/(n[1]+n[2])))
+(p <- 1-pt(t,df))
+if(t<t.krit) cat("Povpreèje1 NI statistièno znaèilno veèje (p =",round(p,3),").\n") else
+cat("Povpreèje1 JE  statistièno zanèilno veèje (p <",alpha,") (p =",round(p,3),").\n")
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Slika}
+<<critvist,fig=true,echo=false>>=
+x <- seq(-max(t,t.krit)+1,max(t,t.krit)+1,length=100)
+plot(x,dt(x,df),type="l",xlab="t",axes=FALSE)
+axis(1)
+axis(2)
+abline(h=0)
+abline(v=t,lwd=3)
+mtext("t",side=3,line=1,at=t)
+abline(v=t.krit,col="red",lwd=3)
+mtext("t.krit",side=3,line=0,at=t.krit,col="red")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+\subsection{Ali so fantje tezji od deklet?}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Porazdelitvi}
+<<fig=true,echo=false>>=
+y <- masa
+boxplot(y~spol, col=c("pink","lightblue"),ylab="masa [kg]")
+rug(y[spol=="zenski"],side=2,col="pink",lwd=2)
+rug(y[!spol=="zenski"],side=4,,col="lightblue",lwd=2)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Opisni pregled}
+<<>>=
+(n <- tapply(y,spol,length))
+(xbar <- tapply(y,spol,mean))
+(s <- tapply(y,spol,sd))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Ali sta varianci znaèilno razlièni?}
+<<>>=
+alpha <- 0.01
+(v <- sort(s^2))
+ns <- as.vector(n[order(s)]) # da se znebim imen
+(F <- as.vector(v[2]/v[1]))
+(df1 <-ns[2]-1)
+(df2 <-ns[1]-1)
+(F.krit <- qf(1-alpha,df1,df2))
+(p <- 1-pf(F,df1,df2))
+if(F<F.krit) cat("Varianci NISTA statistièno znaèilno razlièni (p =",round(p,3),").\n") else
+cat("Varianci STA  statistièno zanèilno razlièni (p <",alpha,") (p =",round(p,3),").\n")
+@
+
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Ali sta varianci znaèilno razlièni?}
+<<crittezaF,fig=true,echo=FALSE>>=
+x <- seq(0,max(F,F.krit)*1.5,length=100)
+plot(x,df(x,df1,df2),type="l",xlab="F",axes=FALSE)
+axis(1)
+axis(2)
+abline(h=0)
+abline(v=F,lwd=3)
+mtext("F",side=3,line=1,at=F)
+abline(v=F.krit,col="red",lwd=3)
+mtext("F.krit",side=3,line=0,at=F.krit,col="red")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Kako smo narisali sliko?}
+<<>>=
+<<crittezaF>>
+
+@
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+Studentov t-test razlike povpreèij
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Hipoteze in delni rezultati}
+Uredimo vrstni red delnih rezultatov za test hipotez
+$$H_0: \mu_{moski}=\mu_{zenski}+\delta$$
+$$H_1: \mu_{moski}>\mu_{zenski}+\delta$$
+<<>>=
+ord <- c("moski","zenski")
+(xbar <- as.vector(xbar[ord]))
+(s <- as.vector(s[ord]))
+(n <- as.vector(n[ord]))
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Stopnja tveganja in kritiène vrednosti}
+<<>>=
+alpha <- 0.01
+delta <- 0
+(df <- n[1]+n[2]-2)
+(t.krit <- qt(1-alpha,df))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Studentov t-test}
+<<>>=
+xbar[1]-xbar[2]
+s2 <- ((n[1]-1)*s[1]^2+(n[2]-1)*s[2]^2)/(n[1]+n[2]-2)
+(t <- (xbar[1]-xbar[2]-delta)/sqrt(s2)*sqrt(n[1]*n[2]/(n[1]+n[2])))
+(p <- 1-pt(t,df))
+if(t<t.krit) cat("Povpreèje1 NI statistièno znaèilno veèje (p =",round(p,3),").\n") else
+cat("Povpreèje1 JE  statistièno zanèilno veèje (p <",alpha,") (p =",round(p,3),").\n")
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Slika}
+<<fig=true,echo=false>>=
+x <- seq(-max(t,t.krit)+1,max(t,t.krit)+1,length=100)
+plot(x,dt(x,df),type="l",xlab="t",axes=FALSE)
+axis(1)
+axis(2)
+abline(h=0)
+abline(v=t,lwd=3)
+mtext("t",side=3,line=1,at=t)
+abline(v=t.krit,col="red",lwd=3)
+mtext("t.krit",side=3,line=0,at=t.krit,col="red")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Neparametrièni test - Wilcoxon}
+<<fig=true,echo=false>>=
+set.seed(1234)
+par(mfrow=c(2,1),mar=c(4,5,0,0))
+varname <- "visina"
+grp <- (spol)
+y<- jitter(get(varname))
+cols <- c("red","blue")[grp]
+plot(y,spol,col=cols,cex=as.numeric(spol),xlab=varname)
+rug(y[grp=="zenski"],0.6,1,col="red")
+rug(y[!grp=="zenski"],0.6,3,col="blue")
+plot(y,rank(y),col=cols,cex=as.numeric(spol),xlab=varname)
+xr <-quantile(y,0.99)
+text(xr,35,sum(rank(y)[grp=="zenski"]),col="red",adj=1)
+text(xr,15,sum(rank(y)[grp=="moski"]),col="blue",adj=1)
+text(xr,25,paste("povp=",sum(rank(y))/2),adj=1)
+smpl <- sample(1:length(y),table(grp)["moski"])
+rnd <- sum(smpl)
+points(y[order(y)][smpl],smpl,pch=16,cex=0.75,col="darkgreen")
+text(xr,5,paste("rnd=",rnd),col="darkgreen",adj=1)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Randomizacijski test - vsota rangov}
+<<fig=true,echo=false>>=
+set.seed(1234)
+par(mfrow=c(2,1),mar=c(4,5,0,0))
+varname <- "visina"
+grp <- sample(spol)
+y<- jitter(get(varname))
+cols <- c("red","blue")[grp]
+plot(y,spol,col=cols,cex=as.numeric(spol),xlab=varname)
+rug(y[grp=="zenski"],0.6,1,col="red")
+rug(y[!grp=="zenski"],0.6,3,col="blue")
+plot(y,rank(y),col=cols,cex=as.numeric(spol),xlab=varname)
+xr <-quantile(y,0.99)
+text(xr,35,sum(rank(y)[grp=="zenski"]),col="red",adj=1)
+text(xr,15,sum(rank(y)[grp=="moski"]),col="blue",adj=1)
+text(xr,25,paste("povp=",sum(rank(y))/2),adj=1)
+smpl <- sample(1:length(y),table(grp)["moski"])
+rnd <- sum(smpl)
+points(y[order(y)][smpl],smpl,pch=16,cex=0.75,col="darkgreen")
+text(xr,5,paste("rnd=",rnd),col="darkgreen",adj=1)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Wilcoxon test v R}
+<<>>=
+wilcox.test(jitter(visina)~spol)
+@
+
+\end{frame}
+%% <<<<<<---------------------|
+
+
+\clearpage
+\section{Kontingenca}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Barva las in oèi}
+<<>>=
+f <- table(lasje,oci)
+f
+addmargins(f)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Prièakovane frekvence}
+<<>>=
+e <- outer(rowSums(f),colSums(f))/sum(f)
+addmargins(e)
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+\begin{frame}[fragile]
+\frametitle{Razlika opaženega in prièakovanega}
+<<>>=
+f-e
+(f-e)^2/e
+1.96^2
+@
+\end{frame}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Test $\chi^2$}
+<<>>=
+alpha <- 0.05
+(df <- (ncol(f)-1)*(nrow(f)-1))
+(X2.krit <- qchisq(1-alpha,df))
+(X2 <- sum((f-e)^2/e))
+(p <- 1-pchisq(X2,df))
+if(X2<X2.krit) cat("Spremenljivki NISTA odvisni (p =",round(p,4),").\n") else
+cat("Spremenljivki STA odvisni (p <",alpha,") (p =",round(p,4),").\n")
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Funkcija za test v R}
+<<>>=
+chisq.test(lasje,oci,correct=FALSE)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+\subsection{Asociacija ( $2 \times 2$ )}
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Barva las in oèi}
+<<echo=false>>=
+f <- table(lasje,oci)
+addmargins(f)
+@
+Asociacija ( $2 \times 2$ )
+
+$$\frac{N(ad-bc)^2}{(a+b)(c+d)(a+c)(b+d)}$$
+<<>>=
+sum(f)*det(matrix(f,2,2))^2/prod(colSums(f),rowSums(f))
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Slika}
+<<fig=true,echo=false>>=
+x <- seq(0+1,max(X2,X2.krit)*1.2,length=100)
+plot(x,dchisq(x,df),type="l",xlab="t",axes=FALSE)
+axis(1)
+axis(2)
+abline(h=0)
+abline(v=X2,lwd=3)
+mtext("X2",side=3,line=1,at=X2)
+abline(v=X2.krit,col="red",lwd=3)
+mtext("X2.krit",side=3,line=0,at=X2.krit,col="red")
+@
+\end{frame}
+%% <<<<<<---------------------|
+\clearpage
+\section{Korelacija in regresija}
+
+Slika Lenoarda da Vincija 'Virtruvian man' prikazuje razmerja razliènih delov telesa. Višina èloveka in
+razpon rok naj bi bila približno enaka. Èe trditev drži, bi morale toèke doloèene z višino ($x$)
+ in razponom rok ($y$) ležati na premici $y=x$.
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Virtruvian man: Roke = Višina}
+<<fig=true,echo=false>>=
+plot(visina, roke,col=spol)
+abline(0,1,col="darkgreen",lwd=2)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Spremenljivke}
+<<>>=
+select <- roke>0
+x <- visina[select]
+y <- roke[select]
+spol <- spol[select]
+n <- length(x)
+
+@
+\end{frame}
+%% <<<<<<---------------------|
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Osnovni raèun}
+\vspace{-1cm}
+<<>>=
+(xbar <- mean(x))
+(ybar <- mean(y))
+sum((x-xbar)*(y-ybar))/(n-1)
+cov(x,y)
+(r <- cov(x,y)/(sd(x)*sd(y)))
+r^2
+(b <- cov(x,y)/var(x))
+(a <- mean(y)-b*mean(x))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Virtruvian man: Roke = Višina}
+<<fig=true,echo=false>>=
+plot(x, y,col=spol,xlab="visina",ylab="roke")
+abline(0,1,col="darkgreen",lwd=2)
+abline(c(a,b),col="red",lwd=4)
+abline(h=mean(y),lty=3)
+abline(v=mean(x),lty=3)
+#points(mean(x),mean(y),cex=2,col=3,pch=16)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Regresija v R}
+\vspace{-1cm}
+<<>>=
+cor(x,y)
+lsfit(x,y)$coefficients
+lm(y~x)$coefficients
+lm(y~x*spol)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Virtruvian man: Roke = Višina}
+<<fig=true,echo=false>>=
+plot(x,y,col=spol,xlab="visina",ylab="teza")
+abline(0,1,col="darkgreen",lwd=2)
+abline(c(a,b),col="red",lwd=4)
+abline(lm(y~x),col="blue",lwd=1)
+#abline(h=mean(y),lty=3)
+#abline(v=mean(x),lty=3)
+#points(mean(x),mean(y),cex=2,col=3,pch=16)
+points(x,predict(lm(y~0+x*spol)),col=spol,pch=16)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Analiza variance za linearni model}
+<<>>=
+anova(lm(roke~visina*spol))
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Primerjava z višino matere}
+\vspace{-1cm}
+<<fig=true,echo=false>>=
+x <- mati
+y <- visina
+plot(x,y,col=spol,xlab="mati",ylab="visina")
+abline(0,1,col="darkgreen",lwd=2)
+#abline(h=mean(y),lty=3)
+#abline(v=mean(x),lty=3)
+#points(mean(x),mean(y),cex=2,col=3,pch=16)
+points(x,predict(lm(y~0+x*spol)),col=spol,pch=16)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Primerjava z višino oèetov}
+\vspace{-1cm}
+<<fig=true,echo=false>>=
+x <- oce
+y <- visina
+plot(x,y,col=spol,xlab="oce",ylab="visina")
+abline(0,1,col="darkgreen",lwd=2)
+#abline(h=mean(y),lty=3)
+#abline(v=mean(x),lty=3)
+#points(mean(x),mean(y),cex=2,col=3,pch=16)
+points(x,predict(lm(y~0+x*spol)),col=spol,pch=16)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+%% |--------------------->>>>>>
+\begin{frame}[fragile]
+\frametitle{Primerjava višin oèetov in mam}
+\vspace{-1cm}
+<<fig=true,echo=false>>=
+x <- oce
+y <- mati
+plot(x,y,col=spol,xlab="oce",ylab="mati")
+abline(0,1,col="darkgreen",lwd=2)
+#abline(h=mean(y),lty=3)
+#abline(v=mean(x),lty=3)
+#points(mean(x),mean(y),cex=2,col=3,pch=16)
+points(x,predict(lm(y~x)),col=spol,pch=16)
+@
+\end{frame}
+%% <<<<<<---------------------|
+
+
+% ----------------------------------------------------------------
+\bibliographystyle{amsplain}
+\bibliography{ab-general}
+\end{document}
+% ----------------------------------------------------------------

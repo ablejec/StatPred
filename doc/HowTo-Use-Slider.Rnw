@@ -1,0 +1,154 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+% \VignetteIndexEntry{}
+% \VignetteDepends{}
+% \VignettePackage{}
+\documentclass[a4paper,12pt]{article}
+%\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc} %% must be here for Sweave encoding check
+\newcommand{\SVNRevision}{$ $Rev: 39 $ $}
+%\newcommand{\SVNDate}{$ $Date:: 2010-05-26 #$ $}
+\newcommand{\SVNId}{$ $Id: Sweave.Rnw 39 2010-05-25 22:22:19Z ABlejec $ $}
+\input{abpkg}
+\input{abcmd}
+\input{abpage}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweave}
+\SweaveOpts{eps=false,prefix.string=./figs/bla,concordance=true}
+%\SweaveOpts{echo=false}
+\setkeys{Gin}{width=0.8\textwidth}  % set graphicx parameter
+%\SweaveOpts{keep.source=true}
+\usepackage{lmodern}
+\input{abfont}
+
+% ----------------------------------------------------------------
+\begin{document}
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+%%% \setkeys{Gin}{width=0.9\textwidth}
+% ----------------------------------------------------------------
+\title{HowTo-Uporaba drsnika}
+\author{A. Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+\maketitle
+% ----------------------------------------------------------------
+%\begin{abstract}
+%
+%\end{abstract}
+% ----------------------------------------------------------------
+\tableofcontents
+<<Author:,echo=FALSE>>=
+###############################################
+##                                           ##
+## (c) Andrej Blejec (andrej.blejec@nib.si)  ##
+##                                           ##
+###############################################
+@
+<<initialize,echo=false,results=hide>>=
+options(width=70)
+library(Hmisc)
+#library(xlsReadWrite)
+@
+
+\section{Namen}
+
+Prikazali bomo uporabo drsnika iz paketa \pkg{rpanel}
+
+<<rpanle>>=
+library(rpanel)
+@
+
+\section{Osnovni graf}
+
+<<fig=TRUE>>=
+n <- 20
+   residuals.draw <- function(panel) {
+   par(mfrow=c(2,1),mar=c(1,4,0,3))
+     n <- length(panel$x)
+     plot(panel$x,1:n,xlim=c(-4,4),ylab="",xlab="x",pch=16)
+     abline(v=panel$A,col="blue")
+     segments(panel$x,1:n,rep(panel$A,n),1:n,col="red",lwd=2)
+     text(4,n*0.9,round(sum(panel$x-panel$A),2),adj=1)
+     plot(panel$A,sum(panel$x-panel$A),pch=16,cex=2,col="red",xlim=c(-4,4),ylim=c(-200,200))
+     points(panel$A,sum((panel$x-panel$A)^2),pch=16,cex=2,col="blue",xlim=c(-4,4),ylim=c(-200,200))
+     abline(h=0)
+     panel
+     }
+   panel <- rp.control(x = rnorm(n))
+   rp.slider(panel, A, -4, 4 , log = FALSE, showvalue=TRUE,action = residuals.draw)
+@
+
+% ----------------------------------------------------------------
+%\bibliographystyle{chicago}
+%\addcontentsline{toc}{section}{\refname}
+%\bibliography{ab-general}
+%--------------------------------------------------------------
+
+%\clearpage
+%\appendix
+%\phantomsection\addcontentsline{toc}{section}{\appendixname}
+%\section{\R\ funkcije}
+%\input{}
+
+\clearpage
+\section*{SessionInfo}
+{\small
+<<sessionInfo,results=tex,echo=false>>=
+cat(win.version(),"\n")
+toLatex(sessionInfo())
+cat("Project path:\\verb'",dirname(getwd()),"'\n")
+@
+}
+
+\subsection*{View as vignette}
+Project files can be viewed by pasting this code to \R\ console:\\
+\begin{Schunk}
+\begin{Sinput}
+<<projectFiles,echo=false,results=tex>>=
+mainFile <- commandArgs(trailingOnly = TRUE)
+mainFile <- strsplit(mainFile,'.',fixed=TRUE)[[1]][1]
+projectName <- rev((strsplit(dirname(getwd()), "/"))[[1]])[1]
+cat('> projectName <-"',projectName,'"; ',sep="")
+cat(' mainFile <-"',mainFile,'"',sep="")
+@
+
+\end{Sinput}
+\end{Schunk}
+<<vignette,eval=false>>=
+commandArgs()
+library(tkWidgets)
+# getrootpath <- function() {
+# fp <- (strsplit(getwd(), "/"))[[1]]
+# file <- file.path(paste(fp[-length(fp)], collapse = "/"))
+# return(file)
+# }
+# fileName <- function(name="bla",ext="PDF") paste(name,ext,sep=".")
+ openPDF(file.path(dirname(getwd()),"doc",paste(mainFile,"PDF",sep=".")))
+ viewVignette("viewVignette", projectName, file.path("../doc",paste(mainFile,"RNW",sep=".")))
+
+@
+
+\vfill \hrule \vspace{2pt} \footnotesize{
+Revision \SVNId\hfill (c) A. Blejec%\input{../_COPYRIGHT.}
+%\SVNRevision ~/~ \SVNDate
+}
+
+
+
+\end{document}
+% ----------------------------------------------------------------

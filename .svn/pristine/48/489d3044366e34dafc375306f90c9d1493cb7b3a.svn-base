@@ -1,0 +1,97 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+%\documentclass[a4paper,12pt,english]{article}
+\documentclass[a4paper,12pt,slovene]{article}
+\usepackage{babel}
+\newcommand{\naslov}{Stat 07-08}
+\input{abpkg}
+\input{abcmd}
+\input{abpage}
+
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweave}
+\usepackage{lmodern}
+\input{abfont}
+\SweaveOpts{prefix.string=./figs/opisna}
+%\SweaveOpts{keep.source=true}
+%\setkeys{Gin}{width=0.8\textwidth} % set graphicx parameter
+% ----------------------------------------------------------------
+\begin{document}
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+%%% \setkeys{Gin}{width=0.9\textwidth}
+% ----------------------------------------------------------------
+\title{Analiza podatkov Statistika 2007/08}
+\author{A. Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+\maketitle
+% ----------------------------------------------------------------
+\begin{abstract}
+Analiza podatkov in kakšna reè za predavanja in vaje
+\end{abstract}
+% ----------------------------------------------------------------
+<<echo=false,results=hide>>=
+options(width=75)
+library(Hmisc)
+library(xlsReadWrite)
+@
+
+\section{Priprava podatkov}
+
+<<>>=
+data <- read.xls("../data/podatki0708.xls")
+summary(data[,-1])
+data <- data[data$spol=="F",]
+attach(data)
+n <- length(id)
+@
+
+<<fig=true>>=
+par(mfrow=c(2,2))
+xlim <- range(c(visina,razpon),na.rm=TRUE)*c(0.95,1.05)
+barplot(table(starost),col="lightblue",main="starost")
+hist(visina,col="lightblue",xlim=xlim)
+rug(jitter(visina))
+hist(teza,col="lightblue")
+rug(jitter(teza))
+hist(razpon,col="lightblue",xlim=xlim)
+rug(jitter(razpon))
+
+@
+
+<<fig=true>>=\cite{Zel2007}@
+
+<<fig=true>>=
+
+plot(sort(visina),1:n)
+points(sort(visina),1:n)
+v <- order(visina)
+lines(visina[v],rank(visina)[v],pch=16,col="red",type="o",cex=1.2)
+table(visina)
+lines(as.numeric(names(table(visina))),table(visina),type="h",lwd=3)
+boxplot(visina, horiz=TRUE,add=TRUE)
+
+@
+
+
+
+% ----------------------------------------------------------------
+%\bibliographystyle{amsplain}
+%\bibliography{}
+\end{document}
+% ----------------------------------------------------------------

@@ -1,0 +1,1268 @@
+307 Patch Control
+
+0
+0
+1
+doc\analizaosebnih.Rnw
+415
+11
+6
+
+
+
+
+
+
+doc\Opisna.Rnw
+TeX:Rnw
+17829883 0 6 29 7 19 0 0 844 718 0 205 147 -1 -1 0 0 18 0 0 18 1 0 19 7   0
+doc\mvtnorm.rnw
+TeX:Rnw:si
+17829883 0 93 1 111 1 0 0 844 718 0 25 147 -1 -1 0 0 21 0 0 21 1 0 1 111   0
+doc\porazdelitve.rnw
+TeX:Rnw
+1052666 0 383 1 235 1 0 0 844 718 0 25 483 -1 -1 0 0 18 0 0 18 1 0 1 235   0
+doc\Vzorcenje.Rnw
+TeX:Rnw
+17838075 1 52 1 64 2 27 35 457 549 0 35 273 -1 -1 0 0 18 0 0 18 1 0 2 64   0
+doc\R-refcard.tex
+TeX
+1060858 0 0 1 958 1 81 105 970 463 0 25 483 -1 -1 0 0 40 0 0 40 1 0 1 958   0
+doc\analizaosebnih.Rnw
+TeX:Rnw:SI
+1060858 0 727 161 745 11 27 35 943 405 1 183 294 -1 -1 0 0 18 0 0 18 1 0 11 745   0
+doc\analizaosebnih.R
+DATA:R
+273678578 0 0 1 0 1 54 70 970 440 1 83 0 -1 -1 0 0 52 0 0 52 1 0 1 0   0
+:\_Y\R\lek\doc\HowTo-lmFitExample.Rnw
+TeX:Rnw
+17838074 0 90 1 100 13 54 70 898 540 0 145 462 -1 -1 0 0 18 0 0 18 1 0 13 100   0
+doc\mindev.Rnw
+TeX:Rnw:si
+17829883 0 245 20 88 2 0 0 844 718 0 35 399 -1 -1 0 0 21 0 0 21 1 0 2 88   0
+doc\mindev.tex
+TeX:Rnw:si
+17829883 0 248 1 248 1 0 0 844 718 0 25 357 -1 -1 0 0 21 0 0 21 1 0 1 248   0
+doc\porazdelitve.tex
+TeX:Rnw
+17829883 0 54 1 59 18 0 0 844 718 0 195 462 -1 -1 0 0 18 0 0 18 1 0 18 59   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\_Run.log
+DATA
+273678578 1 17 17 17 33 54 70 770 440 1 403 357 -1 -1 0 0 -1 -1 -1 -1 1 0 33 17   0
+doc\analizaosebnihA.tex
+TeX
+269496314 0 8 8 9 1 54 70 970 440 0 25 189 -1 -1 0 0 38 0 0 38 1 0 1 9   0
+doc\analizaosebnihS.tex
+TeX
+269496314 0 21 8 13 31 27 35 943 405 0 325 273 -1 -1 0 0 43 0 0 43 1 0 31 13   0
+doc\analizaosebnih.tex
+TeX:Rnw:SI
+1060858 8 819 201 819 1 81 105 997 475 1 83 231 -1 -1 0 0 18 0 0 18 1 0 1 819   0
+doc\R-reference-card.tex
+TeX
+269496314 0 0 1 958 1 81 105 970 463 0 25 1938 -1 -1 0 0 -1 -1 -1 -1 1 0 1 958   0
+doc\Vzorcenje.tex
+TeX:Rnw
+286273530 7 562 1 561 1 27 35 457 549 0 25 483 -1 -1 0 0 18 0 0 18 1 0 1 561   0
+doc\Vzorcenje.R
+DATA:R
+273678578 0 0 1 0 1 0 0 844 470 1 83 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+doc\Vzorcenje.Rnw.tex
+TeX:Rnw
+286273530 0 67 12 45 17 27 35 457 549 0 185 126 -1 -1 0 0 -1 -1 -1 -1 1 0 17 45   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Vzorcenje.Rnw
+TeX:Rnw
+286273530 0 67 12 45 17 27 35 457 549 0 185 126 -1 -1 0 0 -1 -1 -1 -1 1 0 17 45   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Wrapping.ini
+DATA:INI:EDT
+269485050 0 0 1 12 18 189 245 619 759 1 253 252 -1 -1 0 0 83 0 0 83 1 0 18 12   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Input.ini
+DATA:INI:EDT
+269485050 0 0 1 0 1 81 105 511 620 1 83 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Tree.ini
+DATA:INI:EDT
+269485050 0 0 1 0 1 108 140 538 655 1 83 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\MainMenu.ini
+DATA:INI:EDT
+1049594 0 0 1 0 1 54 70 484 584 1 83 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Private.ini
+DATA:INI:EDT
+269485050 0 1003 1 973 17 27 35 457 549 1 243 21 -1 -1 0 0 -1 -1 -1 -1 1 0 17 973   0
+:\Documents and Settings\ablejec\Application Data\WinEdt Team\WinEdt 6\ConfigEx\Environments.ini
+DATA:INI:EDT
+1049594 1 274 1 291 17 0 0 430 514 1 243 567 -1 -1 0 0 -1 -1 -1 -1 1 0 17 291   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Templates\Doc\Sweave.Rnw
+TeX:Rnw
+269488122 0 8 1 8 41 66 66 681 612 0 422 153 -1 -1 0 0 18 0 0 18 1 0 41 8   0
+:\_Y\R\BMI4\doc\BMI-fct.R
+R
+1049587 1 648 1 648 15 154 154 560 806 0 162 532 -1 -1 0 0 52 0 0 52 1 0 15 648   0
+:\_Y\R\BMI4\doc\Ocene-12.Rnw
+TeX:Rnw
+269488123 0 867 5 844 31 132 132 538 784 0 322 779 -1 -1 0 0 67 0 0 67 1 0 31 844   0
+:\_Y\R\BMI4\doc\Ocene-10.Rnw
+TeX:Rnw
+269488123 0 0 1 0 1 110 110 516 762 0 22 1 -1 -1 0 0 67 0 0 67 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\Test.edt
+ASCII:EDT
+269486074 0 5 55 5 3 243 243 1081 802 1 100 96 -1 -1 0 0 1 1 1 1 1 0 3 5   0
+:\Programs\R\R-2.6.2\library\affy\doc\affy.bib
+BibTeX:UNIX
+269583347 0 0 1 0 1 22 22 916 538 0 22 -6573 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Programs\R\R-2.6.2\library\affyPLM\doc\AffyExtensions.bib
+BibTeX:UNIX
+269583347 0 0 1 0 1 0 0 894 516 0 22 -341 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Programs\R\R-2.6.2\library\annotate\doc\annotate.bib
+BibTeX:UNIX
+269583347 0 0 1 0 1 242 242 1136 758 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\krompir\doc\MA.bib
+BibTeX
+269485043 0 0 1 0 1 110 110 1004 626 0 22 -6519 -1 -1 0 0 43 0 0 43 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\TeX\dynamicLaTeXcfg.edt
+ASCII:EDT
+269486074 0 41 8 18 7 242 242 879 753 1 140 228 -1 -1 0 0 21 0 0 21 1 0 7 18   0
+:\_Y\localtexmf\tex\abpkg.tex
+TeX
+269488123 0 27 2 26 18 81 81 747 592 0 192 418 -1 -1 0 0 3 0 0 3 1 0 18 26   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\TeX\_install_dynamicLaTeX.edt
+ASCII:EDT
+269486075 0 0 1 0 1 198 198 813 744 1 80 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\CVS\cvs_install.edt
+ASCII:EDT
+1050619 0 3 1 6 1 132 132 747 678 1 80 115 -1 -1 0 0 -1 -1 -1 -1 1 0 1 6   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\SVN\cvs.edt
+ASCII:EDT
+269486075 0 0 1 2 15 176 176 791 752 1 220 39 -1 -1 0 0 -1 -1 -1 -1 1 0 15 2   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\SVN\cvs_install.edt
+ASCII:EDT
+269486075 0 0 1 0 1 154 154 769 730 1 80 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Samples\Bib\Xbib.tex
+TeX:Soft
+420483067 1 8 1 11 4 54 54 945 561 0 52 210 -1 -1 0 0 61 0 0 61 1 0 4 11   0
+:\_Y\localtexmf\tex\abcmd.tex
+TeX
+269488123 0 25 17 27 18 243 243 903 754 0 192 514 -1 -1 0 0 3 0 0 3 1 0 18 27   0
+:\_Y\R\_man\doc\benchmark.Rnw
+TeX:Rnw
+269488122 0 48 17 57 2 154 154 816 703 0 32 703 -1 -1 0 0 18 0 0 18 1 0 2 57   0
+:\_Y\R\_man\doc\cacheSw.Rnw
+TeX:Rnw
+1052666 0 59 38 57 2 189 189 933 700 0 32 247 -1 -1 0 0 18 0 0 18 1 0 2 57   0
+:\_Y\localtexmf\tex\mysweave.tex
+TeX
+1052667 0 38 4 35 39 243 243 663 756 0 402 247 -1 -1 0 0 3 0 0 3 1 0 39 35   0
+:\_Y\R\_man\doc\vrata.rnw
+TeX:Rnw
+1052666 0 43 14 43 14 54 54 825 559 0 152 228 -1 -1 0 0 18 0 0 18 1 0 14 43   0
+:\_Y\R\Exams\wd\exam1A.tex
+TeX
+1052667 0 0 7 3 17 216 216 1560 770 0 182 58 -1 -1 0 0 8 0 0 8 1 0 17 3   0
+:\_Y\R\_man\cacheDir\cacheSw.Rnw
+TeX:Rnw
+1052666 0 77 17 56 21 189 189 933 700 0 222 57 -1 -1 0 0 18 0 0 18 1 0 21 56   0
+:\_Y\R\_man\doc\Date.rnw
+TeX:Rnw
+1052667 1 221 1 223 10 162 162 822 696 0 112 76 -1 -1 0 0 18 0 0 18 1 0 10 223   0
+:\_Y\R\_man\doc\ASCII.rnw
+TeX:Rnw
+1052667 0 19 1 144 24 135 135 1113 680 0 252 114 -1 -1 0 0 18 0 0 18 1 0 24 144   0
+:\_Y\localtexmf\tex\latex\Rnews\Rnews.sty
+TeX
+17829883 2 131 10 131 16 189 189 849 700 0 172 494 -1 -1 0 0 3 0 0 3 1 0 16 131   0
+:\_Y\localtexmf\tex\latex\Rnews\Rnews.dtx
+TeX:UNIX
+17928187 2 40 1 40 7 0 0 660 511 0 82 209 -1 -1 0 0 25 0 0 25 1 0 7 40   0
+:\_Y\localtexmf\tex\abdef.tex
+TeX
+1052667 0 84 1 81 1 189 189 1167 734 0 22 779 -1 -1 0 0 19 3 3 19 1 0 1 81   0
+:\_Y\R\_man\TestRnews.Rnw
+TeX:Rnw
+17829883 0 88 6 72 1 27 27 687 538 1 80 513 -1 -1 0 0 18 0 0 18 1 0 1 72   0
+:\_Y\R\_man\doc\Pogojne.Rnw
+TeX:Rnw
+1052666 0 19 1 32 1 54 54 1398 608 0 22 418 -1 -1 0 0 18 0 0 18 1 0 1 32   0
+:\_Y\R\Exams\wd\exam1A.tex.ANS
+TeX
+1052667 0 0 1 0 1 243 243 1587 797 0 22 1 -1 -1 0 0 33 0 0 33 1 0 1 0   0
+:\_Y\R\Exams\wd\exam1AMAST.tex
+TeX
+1052667 2 37 15 37 21 189 189 1533 743 0 222 418 -1 -1 0 0 30 0 0 30 1 0 21 37   0
+:\_Y\R\Exams\doc\izpit1.tex
+TeX
+1052667 0 34 5 34 7 162 162 1560 576 0 82 570 -1 -1 0 0 14 0 0 14 1 0 7 34   0
+:\_Y\R\Exams\wd\exam1.tex
+TeX
+1052667 0 888 1 888 1 135 135 1533 549 0 22 684 -1 -1 0 0 8 0 0 8 1 0 1 888   0
+:\_Y\R\_man\doc\psfnss.tex
+TeX
+17829883 0 58 1 66 20 108 108 1452 662 0 212 323 -1 -1 0 0 14 0 0 14 1 0 20 66   0
+:\_Y\localtexmf\tex\abpage.tex
+TeX
+1052667 0 4 1 4 1 216 216 636 729 0 22 77 -1 -1 0 0 3 0 0 3 1 0 1 4   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\AutoMode\bla\ASCIIT1.rnw
+TeX:Rnw
+1052667 0 28 17 19 1 135 135 1113 680 0 22 362 -1 -1 0 0 18 0 0 18 1 0 1 19   0
+:\_Y\R\R-tricks\doc\layout.rnw
+TeX:Rnw
+1052666 0 48 6 11 1 189 189 1116 716 0 22 210 -1 -1 0 0 18 0 0 18 1 0 1 11   0
+:\_Y\R\_man\doc\benchmark.tex
+TeX:Rnw
+269488122 0 48 17 37 1 154 154 816 703 0 22 323 -1 -1 0 0 -1 -1 -1 -1 1 0 1 37   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\TestBeauty.edt
+ASCII:EDT
+269486075 1 8 1 8 26 162 162 660 670 1 330 169 -1 -1 0 0 30 0 0 30 1 0 26 8   0
+:\Program Files\WinEdt Team\Winedt\Macros\Events\Prj-Open.edt
+ASCII:EDT
+269486075 0 0 1 18 30 54 54 579 536 1 370 379 -1 -1 0 0 30 0 0 30 1 0 30 18   0
+:\_Y\localtexmf\tex\fromRnews.tex
+TeX
+286265339 2 10 54 10 60 216 216 876 727 1 610 211 -1 -1 0 0 3 0 0 3 1 0 60 10   0
+:\_Y\localtexmf\tex\latex\Rnews\Rnews.ins
+TeX:DTX
+273682427 0 0 1 15 1 27 27 774 425 0 22 316 -1 -1 0 0 -1 -1 -1 -1 1 0 1 15   0
+:\_Y\R\_man\TestRnews.tex
+TeX:Rnw
+269488123 0 42 11 25 12 27 27 687 538 0 132 210 -1 -1 0 0 -1 -1 -1 -1 1 0 12 25   0
+:\_Y\R\Exams\wd\exam1AMAST
+TeX
+269488123 0 0 1 0 1 189 189 1533 743 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\_man\doc\Date.tex
+TeX:Rnw
+286265339 0 0 1 0 1 189 189 849 723 0 22 1 -1 -1 0 0 18 0 0 18 1 0 1 0   0
+:\_Y\R\OsnoveStat\doc\Osnove.rnw
+TeX:Rnw
+269488123 0 0 1 20 20 162 162 1140 707 0 212 421 -1 -1 0 0 -1 -1 -1 -1 1 0 20 20   0
+:\_X\BASE2\doc\BASE.tex
+TeX:SI
+269488122 0 332 1 333 19 0 0 902 362 0 202 567 -1 -1 0 0 45 3 3 45 1 0 19 333   0
+:\Documents and Settings\ablejec\Application Data\Subversion\config
+TeX
+1052666 0 105 22 105 40 81 81 740 592 1 470 651 -1 -1 0 0 56 0 0 56 1 0 40 105   0
+:\_X\BASE2\doc\test-keywords3.tex
+TeX:Rnw
+17829883 0 0 1 0 1 135 135 794 646 0 22 1 -1 -1 0 0 18 0 0 18 1 0 1 0   0
+:\_X\BASE2\doc\test-keywords3.R
+R
+1049587 0 0 1 0 1 108 108 767 619 0 22 1 -1 -1 0 0 1 0 0 1 1 0 1 0   0
+:\_X\BASE2\doc\test-keywords3.Rnw
+TeX:Rnw
+1052667 0 35 6 32 1 54 54 713 565 0 22 462 -1 -1 0 0 18 0 0 18 1 0 1 32   0
+:\_X\BASE2\doc\MIAME01.tex
+TeX:SI
+1052666 0 220 6 220 8 0 0 902 362 0 92 315 -1 -1 0 0 45 3 3 45 1 0 8 220   0
+:\_Y\R\ICOTS-8\sss-logo.rnw
+TeX:Rnw
+1052666 0 57 1 57 1 162 162 752 685 0 22 441 -1 -1 0 0 18 0 0 18 1 0 1 57   0
+:\Program Files\MiKTeX 2.6\tex\latex\ltxmisc\url.sty
+TeX:DTX:UNIX
+307335163 0 0 1 0 1 81 81 917 603 0 22 -3968 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_X\BASE2\doc\test-keywords2.Rnw
+TeX:Rnw
+269488123 0 35 6 32 1 54 54 713 565 0 22 484 -1 -1 0 0 -1 -1 -1 -1 1 0 1 32   0
+:\_X\BASE2\doc\test-keywords.Rnw
+TeX:Rnw
+269488123 0 35 6 35 9 54 54 713 565 0 102 630 -1 -1 0 0 -1 -1 -1 -1 1 0 9 35   0
+:\_Y\MIAME\MIAME01.tex
+TeX:SI
+269488123 0 0 5 3 1 0 0 902 362 0 22 64 -1 -1 0 0 45 3 3 45 1 0 1 3   0
+:\Program Files\WinEdt Team\Winedt\Samples\Examples\Demo.tex
+TeX:Hard
+269488122 0 25 13 771 15 243 243 1023 834 0 162 336 -1 -1 0 0 75 0 0 75 1 0 15 771   0
+:\_Y\MIAME\MIAME02.tex
+TeX
+269488123 0 0 1 0 1 216 216 875 726 0 22 -2141 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Local Settings\Temp\MIAME01.tex
+TeX
+34607099 7 103 40 103 37 0 362 902 724 0 382 -4289 -1 -1 0 0 -1 -1 -1 -1 1 0 37 103   0
+:\_Y\My Documents\Fito\MIAME\MIAME01.tex
+TeX
+269488123 0 76 5 74 1 81 81 945 627 0 22 610 -1 -1 0 0 -1 -1 -1 -1 1 0 1 74   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Samples\Thesis\Thesis.tex
+TeX
+403705850 0 0 1 0 1 162 162 1026 708 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\Sweave\Krnsko03.Rnw
+TeX
+1052666 0 273 15 263 1 108 108 771 644 0 22 1 -1 -1 0 0 38 0 0 38 1 0 1 263   0
+:\_Y\R\Tips-Tricks\sweave-tricks.txt
+ASCII
+5244922 0 59 1 66 23 81 81 744 602 0 242 407 -1 -1 0 0 1 0 0 1 1 0 23 66   0
+:\_Y\R\_man\mfrow.rnw
+TeX
+1052666 0 31 23 40 13 27 27 1275 565 0 142 1 -1 -1 0 0 38 0 0 38 1 0 13 40   0
+:\_Y\R\Sweave\poskus2.R
+R
+1049586 0 0 1 11 31 81 81 1329 617 0 322 1 -1 -1 0 0 52 0 0 52 1 0 31 11   0
+:\_Y\R\Sweave\poskus2.Rnw
+TeX
+1052666 1 0 1 10 42 108 108 1395 617 1 502 1 -1 -1 0 0 38 0 0 38 1 0 42 10   0
+:\_Y\R\Brancelj\Clanek\korelacija06.rnw
+TeX
+1052666 1 623 1 630 1 54 54 597 555 1 92 324 -1 -1 0 0 38 0 0 38 1 0 1 630   0
+:\_Y\R\Ana\normexp.tex
+TeX
+1052667 0 78 15 33 1 27 27 570 530 0 22 1 -1 -1 0 0 1 0 0 1 1 0 1 33   0
+:\_Y\R\BMI4\doc\RandomXY.Rnw
+TeX
+1052666 0 245 1 245 31 135 135 678 636 1 392 483 -1 -1 0 0 38 0 0 38 1 0 31 245   0
+:\Programs\R\R-2.4.0\share\texmf\Sweave.sty
+TeX:DTX:UNIX
+5345274 0 0 1 18 31 216 216 963 740 0 322 379 -1 -1 0 0 25 0 0 25 1 0 31 18   0
+:\_Y\R\BMI4\doc\MLE_01.tex
+TeX
+1052666 0 142 120 142 1 135 135 1329 755 0 22 1 -1 -1 0 0 38 0 0 38 1 0 1 142   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\SweaveChunk.edt
+ASCII:EDT
+1050618 0 24 9 13 10 243 243 1491 779 1 182 274 -1 -1 0 0 42 0 0 42 1 0 10 13   0
+:\R\U_V_neodvisna_podatki\nlminb.rnw
+DATA
+5243122 0 0 1 71 2 162 162 1191 606 0 32 162 -1 -1 0 0 46 0 0 46 1 0 2 71   0
+:\notebook\MyTeX\Predavanja\MULVAR\corr2.tex
+TeX
+1052667 0 6 17 17 33 189 189 731 713 0 342 1 -1 -1 0 0 1 0 0 1 1 0 33 17   0
+:\_STAT100\STAT100-06-01.tex
+TeX:US
+1052666 1 38 2 38 29 162 162 997 695 0 302 1 -1 -1 0 0 114 0 0 114 1 0 29 38   0
+:\_Y\R\MArray\Logfile.Tex
+TeX
+1052666 1 49 1 54 3 54 54 631 538 0 42 370 -1 -1 0 0 3 0 0 3 1 0 3 54   0
+:\_Y\R\Brancelj\Clanek\korelacija08.tex
+TeX
+1052666 0 1157 20 926 1 162 162 848 668 0 22 672 -1 -1 0 0 38 0 0 38 1 0 1 926   0
+:\_Y\My Documents\Kongresi\2007_Biomat\Presentation\Biomat2007a.tex
+TeX:UNIX:US:SI
+1150971 0 455 1 454 12 27 27 604 511 0 132 190 -1 -1 0 0 143 0 0 143 1 0 12 454   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\ITGF6PM1\beameruserguide[1].tex
+TeX:UNIX
+1150970 2 2080 15 2080 19 81 81 959 583 0 202 1 -1 -1 0 0 24 0 0 24 1 0 19 2080   0
+:\_Y\R\Pavlic-07\Doc\Analiza1.rnw
+TeX
+1052658 0 63 1 67 1 135 135 962 642 0 22 701 -1 -1 0 0 38 0 0 38 1 0 1 67   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\Sweave.edt
+TeX:EDT
+1052666 0 3 4 6 35 27 27 570 530 0 362 127 -1 -1 0 0 57 0 0 57 1 0 35 6   0
+:\_Y\R\Brancelj\Clanek\references.bib
+BibTeX
+1049586 0 18 1 1 56 162 162 874 653 0 572 22 -1 -1 0 0 21 0 0 21 1 0 56 1   0
+:\_Y\R\Brancelj\Clanek\korelacija08.rnw
+TeX
+1052666 1 0 1 54 11 54 54 597 555 1 192 505 -1 -1 0 0 38 0 0 38 1 0 11 54   0
+:\_Y\R\Sweave\RejectionM2.Rnw
+TeX
+1052666 0 26 1 24 47 108 108 1395 617 1 552 313 -1 -1 0 0 38 0 0 38 1 0 47 24   0
+:\_Y\R\Stat-Vaje\Vaja01.Rnw
+TeX
+1052670 0 174 24 268 30 216 216 1038 723 1 382 484 -1 -1 0 0 38 0 0 38 1 0 30 268   0
+:\_Y\R\ITAP_2006\Vaja2b.Rnw
+TeX
+1052666 0 31 1 29 1 108 108 1395 617 1 92 1 -1 -1 0 0 38 0 0 38 1 0 1 29   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\BeautifyR.edt
+ASCII:EDT
+1050618 0 16 40 15 3 108 108 849 517 1 112 1 -1 -1 0 0 57 0 0 57 1 0 3 15   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\indentSelection.edt
+ASCII:EDT
+1050618 0 27 1 11 3 216 216 826 836 0 42 232 -1 -1 0 0 57 0 0 57 1 0 3 11   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\bla.r
+R
+1049586 0 28 1 3 8 27 27 745 450 0 92 64 -1 -1 0 0 17 0 0 17 1 0 8 3   0
+:\_Y\R\BeautifyR\grda3.r
+R
+1049586 0 18 11 26 1 243 243 904 738 1 92 1 -1 -1 0 0 1 62 62 1 1 0 1 26   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Samples\Bib\Xbib.bib
+BibTeX
+269485042 0 0 1 0 1 81 81 972 588 0 22 -461 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Samples\GUI\_Gui Source.tex
+TeX
+403705851 0 0 1 0 1 108 108 828 654 0 22 -13203 -1 -1 0 0 80 0 0 80 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\GetMode.txt
+ASCII:UNIX
+307333114 0 0 1 33 3 81 81 1116 551 0 42 442 -1 -1 0 0 14 0 0 14 1 0 3 33   0
+:\_Y\R\Stat-Vaje\Vaja01.R
+R
+269485042 2 96 27 96 32 189 189 876 673 0 332 631 -1 -1 0 0 -1 -1 -1 -1 1 0 32 96   0
+:\_Y\R\Stat-Vaje\Vaja01.tex
+TeX
+269488122 0 0 1 0 1 189 189 1011 696 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\R\Stat-Vaje\vaja1.tex
+TeX
+269488122 0 62 1 2 18 216 216 1038 723 0 192 43 -1 -1 0 0 38 0 0 38 1 0 18 2   0
+:\R\Stat-Vaje\logfile.r
+R
+269485042 0 0 1 15 8 162 162 546 602 0 92 316 -1 -1 0 0 -1 -1 -1 -1 1 0 8 15   0
+:\_Y\R\BMI4\MLE9a.r
+R
+269485042 0 0 1 0 1 108 108 935 615 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\BMI4\oceniB3.r
+R
+269485042 0 0 1 440 1 81 81 908 588 0 22 778 -1 -1 0 0 -1 -1 -1 -1 1 0 1 440   0
+:\RUSER\amisc.r
+R
+269485042 0 41 39 40 44 0 0 800 496 0 452 -83 -1 -1 0 0 -1 -1 -1 -1 1 0 44 40   0
+:\_Y\My Documents\Kongresi\2007_Biomat\Presentation\Biomat2005a.tex
+TeX:UNIX:US:SI
+269586426 0 0 1 0 1 189 189 1528 721 0 22 -4368 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\E3OTYHO3\beamerexample[1].tex
+TeX:UNIX
+269586426 0 0 1 340 1 54 54 932 556 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 340   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\6SOUI7WY\Sweave_Beamer[1].tex
+TeX:UNIX
+269586426 0 0 1 66 1 0 0 878 502 0 22 673 -1 -1 0 0 -1 -1 -1 -1 1 0 1 66   0
+:\_Y\My Documents\Kongresi\2007_Biomat\Themes.tex
+TeX:UNIX
+269586426 0 96 1 15 21 162 162 1040 664 0 222 316 -1 -1 0 0 82 0 0 82 1 0 21 15   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\RARAV7AK\qa2005-release[1].tex
+TeX:UNIX
+269586426 0 96 1 3 2 162 162 1040 664 0 32 64 -1 -1 0 0 82 0 0 82 1 0 2 3   0
+:\Programs\R\R-2.4.0\share\texmf\Rd.sty
+TeX:DTX:UNIX
+273780730 1 57 1 57 43 189 189 936 713 0 442 169 -1 -1 0 0 47 0 0 47 1 0 43 57   0
+:\_Y\R\Brancelj\Clanek\korelacija03.Rnw
+TeX
+1052666 1 0 38 0 1 0 0 543 501 1 92 1 -1 -1 0 0 38 0 0 38 1 0 1 0   0
+:\_Y\R\R.bib
+BibTeX:UNIX
+269583346 0 22 50 797 56 54 54 793 535 0 572 652 -1 -1 0 0 -1 -1 -1 -1 1 0 56 797   0
+:\_Y\R\Brancelj\Clanek\korelacija08.bbl
+DATA
+273678578 0 0 1 0 1 216 216 928 707 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\Brancelj\Clanek\korelacija08.aux
+DATA
+273678578 0 0 1 64 25 216 216 928 707 1 332 610 -1 -1 0 0 -1 -1 -1 -1 1 0 25 64   0
+:\_Y\R\Brancelj\Clanek\references-extracted.bib
+BibTeX
+269485042 0 0 1 0 1 189 189 901 680 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Latex\bibMacros.cfg
+ASCII:EDT
+269486074 0 0 1 42 25 189 189 997 748 1 332 689 -1 -1 0 0 33 0 0 33 1 0 25 42   0
+:\Gonzui\access.log
+DATA
+273678578 0 0 1 0 1 81 81 1056 619 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\BMI4\MLE_02.Rnw
+TeX
+269488122 5 215 13 215 14 135 135 678 636 1 222 274 -1 -1 0 0 38 0 0 38 1 0 14 215   0
+:\_Y\R\BMI4\doc\MLE_01.Rnw
+TeX
+269488122 0 331 1 331 1 135 135 678 636 1 92 274 -1 -1 0 0 38 0 0 38 1 0 1 331   0
+:\R\U_V_neodvisna_podatki\Logfile.Tex
+TeX
+269488122 0 0 1 0 1 27 27 1056 471 0 22 -1931 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\_man\mfrow.tex
+TeX
+269488122 0 0 1 7 26 54 54 1029 592 0 272 148 -1 -1 0 0 -1 -1 -1 -1 1 0 26 7   0
+:\texmf\doc\latex\texpower\FAQ-printout.tex
+TeX:UNIX
+269586426 0 0 1 101 17 54 54 1302 590 0 182 2122 -1 -1 0 0 -1 -1 -1 -1 1 0 17 101   0
+:\Program Files\R\R-2.2.0\library\scatterplot3d\doc\chicago.sty
+TeX
+269488122 0 0 1 194 2 108 108 1356 644 0 32 757 -1 -1 0 0 16 0 0 16 1 0 2 194   0
+:\Documents and Settings\ablejec\Local Settings\Temp\C-texmf-source-guides-lshort-russian-lshortru.zip-src-fancyvrb.sty
+TeX:DTX:UNIX
+273780730 0 0 1 321 21 27 27 1275 563 0 222 1 -1 -1 0 0 -1 -1 -1 -1 1 0 21 321   0
+:\Program Files\R\R-2.2.0\library\scatterplot3d\doc\s3d.Rnw
+TeX
+269488122 0 0 1 50 21 27 27 1275 563 1 292 694 -1 -1 0 0 -1 -1 -1 -1 1 0 21 50   0
+:\Program Files\R\R-2.2.0\library\scatterplot3d\doc\scatterplot3d-help.tex
+TeX
+269488122 0 0 1 0 16 81 81 1329 617 0 172 1 -1 -1 0 0 -1 -1 -1 -1 1 0 16 0   0
+:\Program Files\R\R-2.2.0\library\scatterplot3d\doc\SFBs3d_Examples.tex
+TeX
+269488122 0 0 1 0 1 54 54 1302 590 0 22 -419 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\My Documents\Tips-Tricks\LaTeX\sideways.rnw
+TeX
+269488122 0 0 1 15 1 0 0 1248 536 0 22 316 -1 -1 0 0 -1 -1 -1 -1 1 0 1 15   0
+:\temp\bla.rnw
+TeX
+269488122 0 0 1 15 1 0 0 1248 536 0 22 316 -1 -1 0 0 -1 -1 -1 -1 1 0 1 15   0
+:\temp\bla.tex
+TeX
+269488122 0 0 1 8 19 0 0 1248 536 0 202 169 -1 -1 0 0 -1 -1 -1 -1 1 0 19 8   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Beamer\Example.edt
+ASCII:EDT
+269486074 0 24 9 24 10 243 243 1491 779 1 182 505 -1 -1 0 0 -1 -1 -1 -1 1 0 10 24   0
+:\_Y\R\Brancelj\Clanek\korelacija07.rnw
+TeX
+269488122 0 716 1 737 1 54 54 597 555 1 92 -125 -1 -1 0 0 38 0 0 38 1 0 1 737   0
+:\_Y\R\Brancelj\Clanek\korelacija07.tex
+TeX
+269488122 0 757 42 10 28 54 54 801 578 0 292 211 -1 -1 0 0 -1 -1 -1 -1 1 0 28 10   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Local\Startup.edt
+ASCII:EDT
+269486074 1 37 13 37 37 135 135 674 658 1 452 64 -1 -1 0 0 30 0 0 30 1 0 37 37   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\WinEdtEx.ini
+DATA:INI
+273678578 0 0 1 947 9 189 189 1024 699 1 172 -125 -1 -1 0 0 8 0 0 8 1 0 9 947   0
+:\_Y\R\Brancelj\Sweave-test-1.tex
+noweb; noweb-default-code-mode: R-mode;
+269485042 0 0 1 2 1 27 27 774 551 0 22 43 -1 -1 0 0 -1 -1 -1 -1 1 0 1 2   0
+:\Programs\R\R-2.4.0\share\texmf\omscmtt.fd
+DATA:DTX:UNIX
+273776882 0 0 1 0 1 0 0 747 524 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Programs\R\R-2.4.0\share\texmf\upquote.sty
+TeX:DTX:UNIX
+273780730 0 0 1 15 1 243 243 990 767 0 22 -545 -1 -1 0 0 -1 -1 -1 -1 1 0 1 15   0
+:\_Y\R\Sweave\RejectionM.Rnw
+TeX
+269488123 0 83 42 83 34 108 108 1395 617 1 422 589 -1 -1 0 0 38 0 0 38 1 0 34 83   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\Recorded Macro.edt
+ASCII:EDT
+269486074 1 96 52 96 1 81 81 822 490 1 92 505 -1 -1 0 0 19 0 0 19 1 0 1 96   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder_temp.R
+R
+269485042 1 0 1 20 1 81 81 799 504 0 22 421 -1 -1 0 0 -1 -1 -1 -1 1 0 2 19   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\bla.r
+R
+269485042 1 12 11 0 1 27 27 745 450 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\Sweave\poskus1.Rnw
+DATA
+273678578 0 8 1 3 30 108 108 1395 617 1 382 64 -1 -1 0 0 33 0 0 33 1 0 30 3   0
+:\_Y\R\Sweave\RejectionM.tex
+TeX
+269488123 0 65 1 75 10 0 0 808 536 0 112 463 -1 -1 0 0 38 0 0 38 1 0 10 75   0
+:\_Y\R\ITAP_2006\Vaja2a.Rnw
+TeX
+269488122 0 88 6 119 12 108 108 1395 617 1 202 -542 -1 -1 0 0 38 0 0 38 1 0 12 119   0
+:\_Y\R\Sweave\sweave-tricks.txt
+ASCII
+273680379 0 30 1 33 30 81 81 744 602 0 312 337 -1 -1 0 0 -1 -1 -1 -1 1 0 30 33   0
+:\_Y\R\ITAP_2006\sweave-tricks.txt
+ASCII
+273680379 0 30 1 33 30 81 81 744 602 0 312 337 -1 -1 0 0 -1 -1 -1 -1 1 0 30 33   0
+:\_Y\R\BeautifyR\grda2.r
+R
+269485042 0 21 1 36 2 243 243 904 738 1 102 400 -1 -1 0 0 1 41 41 1 1 0 2 36   0
+:\Documents and Settings\ablejec\Local Settings\Temp\Revision 1.10 of BeautifyR.edt
+ASCII:EDT
+269486074 0 0 1 0 1 162 162 704 686 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\BeautifyR\BeautifyR_diff.edt
+ASCII:EDT
+269486074 0 0 1 0 1 135 135 677 659 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Local Settings\Temp\Revision 1.8 of BeautifyR.edt
+ASCII:EDT
+269486074 0 0 1 0 1 81 81 623 605 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\function.edt
+ASCII:EDT
+269486074 0 8 26 8 26 27 27 732 533 1 342 169 -1 -1 0 0 12 0 0 12 1 0 26 8   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\for.edt
+ASCII:EDT
+269486074 0 0 1 0 1 108 108 677 607 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\AcroRdClose.edt
+ASCII:EDT
+269486074 0 0 1 0 1 81 81 650 580 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\grda2.r
+DATA
+5243122 0 70 1 50 1 54 54 795 463 1 92 715 -1 -1 0 0 1 45 45 1 1 0 1 50   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\grda.r
+DATA
+5243126 0 21 1 3 33 189 189 1027 748 1 412 64 -1 -1 0 0 1 15 15 1 1 0 33 3   0
+:\notebook\MyTeX\Predavanja\MULVAR\Vaja2a-01.Rnw
+TeX
+1052666 1 2 1 9 35 108 108 1395 617 1 432 190 -1 -1 0 0 38 0 0 38 1 0 35 9   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Macros\Recorder\replace.edt
+ASCII:EDT
+1050618 1 13 18 13 17 135 135 840 641 1 252 169 -1 -1 0 0 1 32 32 1 1 0 17 13   0
+:\_Y\R\Domanjko\macke.tex
+TeX
+1052666 0 52 105 3 14 108 108 1395 617 1 222 64 -1 -1 0 0 38 0 0 38 1 0 14 3   0
+:\Program Files\WinEdt Team\WinEdt\Bitmaps\Gui\_Gui Source.tex
+TeX
+269488123 0 0 1 0 1 135 135 799 640 0 22 -2645 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Doc\News.txt
+ASCII
+307234811 0 0 1 0 1 189 189 1000 740 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\RCS\_install.log
+ASCII
+273680379 0 0 1 0 1 189 189 997 747 1 92 1 -1 -1 0 0 14 0 0 14 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Samples\Examples\Demo.tex
+TeX
+403705851 0 88 17 89 1 243 243 1024 804 0 22 337 -1 -1 0 0 75 0 0 75 1 0 1 89   0
+:\Splus4\revweb\FIRST.TEX
+TeX
+269488123 1 14 9 14 24 135 135 798 694 0 252 295 -1 -1 0 0 1 0 0 1 1 0 24 14   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\LIMKMRFP\latex_tips[1].tex
+TeX
+269488122 0 34 68 42 1 243 243 1051 802 1 92 253 -1 -1 0 0 30 0 0 30 1 0 1 42   0
+:\_Y\My Documents\Racunalnistvo\RAC100\RAC100-061011S.tex
+TeX
+269488123 0 92 1 104 1 108 108 1143 555 1 92 505 92 1 0 0 1 144 0 55 1 0 1 104   0
+:\_Y\My Documents\Racunalnistvo\RAC100\RAC100-061011.tex
+TeX
+269488122 0 146 1 7 33 108 108 1143 555 0 342 120 -1 -1 0 0 55 0 0 55 1 0 33 7   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\8PAFO1M7\Tukey-1977-EDA[1].bib
+BibTeX:UNIX
+269583346 0 0 1 12 55 162 162 703 686 0 562 253 -1 -1 0 0 23 0 0 23 1 0 55 12   0
+:\Program Files\R\R-2.2.0\library\strucchange\doc\strucchange-intro.tex
+TeX:UNIX
+269586427 0 107 8 99 69 189 189 731 712 0 702 2080 -1 -1 0 0 38 0 0 38 1 0 69 99   0
+:\_Y\R\Sweave\poskus2.tex
+TeX
+269488123 1 31 1 3 1 243 243 1124 789 0 22 64 -1 -1 0 0 38 0 0 38 1 0 1 3   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\PN5N87QN\apssamp[1].tex
+TeX:UNIX
+1150971 0 349 1 349 2 216 216 1024 775 1 102 463 -1 -1 0 0 -1 -1 -1 -1 1 0 2 349   0
+:\Gonzui\gonzui.log
+DATA
+273678578 0 0 1 0 1 154 154 795 712 1 78 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\ITAP_2006\Vaja2.Rnw
+TeX
+269488122 0 65 1 64 2 108 108 1395 617 1 102 127 -1 -1 0 0 38 0 0 38 1 0 2 64   0
+:\texmf\tex\latex\base\inputenc.sty
+TeX:DTX
+307236859 0 0 1 0 1 81 81 623 604 0 22 -1238 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\R-line-go.edt
+ASCII:EDT
+269486074 0 0 1 0 1 216 216 758 717 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\Sweave\poskus1.tex
+TeX
+269488123 0 23 1 23 1 81 81 1368 591 0 22 484 -1 -1 0 0 33 0 0 33 1 0 1 23   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Edt RCS\DelAdd.edt
+ASCII:EDT
+269486074 0 15 5 4 14 81 81 620 605 1 222 85 -1 -1 0 0 46 0 0 46 1 0 14 4   0
+:\Program Files\WinEdt Team\WinEdt\Menus\Shortcuts\Delete Word.edt
+ASCII:EDT
+269486074 0 0 1 3 5 108 108 647 632 1 132 64 -1 -1 0 0 12 0 0 12 1 0 5 3   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\R-paste-go.edt
+ASCII:EDT
+269486074 0 0 1 0 1 27 27 569 528 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\R-paste.edt
+ASCII:EDT
+269486074 0 0 1 7 1 54 54 759 560 1 92 148 -1 -1 0 0 14 0 0 14 1 0 1 7   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\send2R.edt
+ASCII:EDT
+269486074 0 10 9 10 1 81 81 786 587 1 92 211 -1 -1 0 0 23 0 0 23 1 0 1 10   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\R-source.edt
+ASCII:EDT
+1050618 0 0 1 0 1 54 54 596 555 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\R\R-line.edt
+ASCII:EDT
+269486074 0 0 1 0 1 189 189 731 713 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\R\R-2.2.0\library\zoo\doc\zoo-quickref.tex
+TeX:UNIX
+269586427 0 0 1 99 1 216 216 758 739 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 99   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Config\Backup\_Backup.edt
+ASCII:EDT
+269486074 0 0 1 0 1 27 27 943 573 1 92 -1553 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Exec\MiKTeX\ExeMode_Custom.edt
+ASCII:EDT
+269486074 0 0 1 112 38 243 243 1159 789 1 462 2099 -1 -1 0 0 -1 -1 -1 -1 1 0 38 112   0
+:\_Y\R\Sweave\poskus1
+TeX
+269488123 0 0 1 5 35 108 108 1395 618 0 362 106 -1 -1 0 0 33 0 0 33 1 0 35 5   0
+:\Bla\poskus1.log
+DATA
+307233010 0 0 1 20 26 135 135 1422 645 1 342 421 -1 -1 0 0 115 0 0 115 1 0 26 20   0
+:\_Y\R\Sweave\Sweave-test-1.log
+DATA
+307233010 0 0 1 0 1 162 162 924 505 1 92 -4703 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_Y\R\Sweave\Sweave-test-1.tex
+TeX
+269488123 0 10 55 6 1 189 189 1476 698 0 22 127 -1 -1 0 0 56 0 0 56 1 0 1 6   0
+:\_Y\My Documents\LEdProjects\Test project\New.tex
+TeX
+269488123 0 27 1 4 1 135 135 678 659 0 22 85 -1 -1 0 0 -1 -1 -1 -1 1 0 1 4   0
+:\R\test\Rplots.log
+DATA
+5243122 0 7 35 2 46 81 81 624 605 1 542 43 -1 -1 0 0 1 5 5 1 1 0 46 2   0
+:\_Adobe_MakePDF\out\77-nabsioteriAna.log
+DATA
+5243122 0 0 1 0 1 108 108 651 632 1 92 1 -1 -1 0 0 53 0 0 53 1 0 1 0   0
+:\_STAT100\STAT100-060403S.tex
+TeX
+1052667 1 240 3 240 63 108 108 1143 555 0 642 379 -1 -1 0 0 55 0 0 55 1 0 63 240   0
+:\_Y\My Documents\Racunalnistvo\RAC100\RAC100-061011S.log
+DATA
+307233010 0 0 1 0 1 162 162 705 685 1 92 1 -1 -1 0 0 115 0 0 115 1 0 1 0   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Exec\MiKTeX\TeX System.edt
+ASCII:EDT
+269486074 0 0 1 0 1 216 216 1051 714 1 92 1 -1 -1 0 0 21 0 0 21 1 0 1 0   0
+:\_STAT100\STAT100-060111.tex
+TeX
+269496315 0 32 19 32 19 54 54 866 602 0 202 673 -1 -1 0 0 114 0 0 114 1 0 19 32   0
+:\_STAT100\STAT100-060113.tex
+TeX
+269496315 0 269 1 59 28 54 54 970 602 0 292 715 -1 -1 0 0 114 0 0 114 1 0 28 59   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\Exec\MiKTeX\STAT100-Exams-test.tex
+TeX
+269488123 0 45 32 45 80 108 108 920 555 0 812 736 -1 -1 0 0 52 0 0 52 1 0 80 45   0
+:\_STAT100\STAT100-060407.tex
+TeX
+269488123 0 139 1 4 1 108 108 920 555 0 22 85 -1 -1 0 0 52 0 0 52 1 0 1 4   0
+:\_Y\R\MVA3\MVA05\out.tex
+TeX
+269488123 0 0 1 0 1 81 81 916 614 0 22 1 -1 -1 0 0 186 0 0 186 1 0 1 0   0
+:\Documents and Settings\ablejec\Desktop\Logfile.Tex
+TeX
+269488123 0 0 1 67 12 108 108 943 641 0 132 547 -1 -1 0 0 3 0 0 3 1 0 12 67   0
+:\_STAT100\STAT100-FAQ.tex
+TeX
+269488123 0 311 104 302 1 27 27 896 480 0 22 703 -1 -1 0 0 114 0 0 114 1 0 1 302   0
+:\_Y\My Documents\SDS\ICOTS-8\email-1.tex
+TeX
+269488122 0 43 15 43 1 243 243 1242 758 0 22 341 -1 -1 0 0 17 0 0 17 1 0 1 43   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Beamer\block.edt
+ASCII:EDT
+269486074 0 0 11 2 15 135 135 840 641 1 232 43 -1 -1 0 0 1 40 40 1 1 0 15 2   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LocalTools\bla.edt
+ASCII:EDT
+269486074 0 117 1 113 18 135 135 1024 553 0 192 190 -1 -1 0 0 24 0 0 24 1 0 18 113   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LocalTools\bla.txt
+ASCII
+273680379 0 0 1 0 1 135 135 1024 553 0 22 1 -1 -1 0 0 1 0 0 1 1 0 1 0   0
+:\_Y\R\Audit\Logfile.Tex
+TeX
+269488123 1 619 73 568 1 27 27 862 537 0 22 400 -1 -1 0 0 3 0 0 3 1 0 1 568   0
+:\Program Files\ISLITE\ablejec\addrbook.log
+DATA
+273678578 0 0 1 0 1 27 27 862 515 1 92 1 -1 -1 0 0 1 0 0 1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LocalTools\RAppendDuplicatedText.edt
+ASCII:EDT
+269486074 0 16 4 19 13 54 54 943 472 1 212 400 -1 -1 0 0 1 29 29 1 1 0 13 19   0
+:\Program Files\WinEdt Team\WinEdt\Exec\Acrobat CloseDoc.edt
+ASCII:EDT
+269486074 0 10 106 10 1 162 162 1051 580 1 92 211 -1 -1 0 0 21 0 0 21 1 0 1 10   0
+:\_Y\R\Audit\Figures.tex
+TeX
+269496315 0 50 47 58 2 54 54 970 602 0 32 400 -1 -1 0 0 3 0 0 3 1 0 2 58   0
+:\_STAT100\STAT100-060113S.tex
+TeX
+269496315 0 80 26 8 34 54 54 970 602 0 352 169 -1 -1 0 0 114 0 0 114 1 0 34 8   0
+:\_Y\R\MVA3\MVA05\Logfile.Tex
+TeX
+269488123 0 0 1 8 14 135 135 970 668 0 152 169 -1 -1 0 0 3 0 0 3 1 0 14 8   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Beamer\onlyArticle.edt
+ASCII:EDT
+269486074 1 17 4 17 22 0 0 999 515 1 302 148 -1 -1 0 0 28 0 0 28 1 0 22 17   0
+:\_Y\My Documents\SyncToyData\SyncToyLog.log
+DATA
+273678578 0 0 1 0 1 54 54 889 542 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\ISLITE\ablejec\todolist.log
+DATA
+273678578 0 0 1 7470 53 27 27 862 515 1 612 1807 -1 -1 0 0 -1 -1 -1 -1 1 0 53 7470   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LocalTools\AppendDuplicatedText.edt
+ASCII:EDT
+269486074 0 16 12 16 12 54 54 943 472 1 202 337 -1 -1 0 0 1 27 27 1 1 0 12 16   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LocalTools\DuplicateText.edt
+ASCII:EDT
+269486074 0 17 4 17 30 54 54 943 472 1 382 358 -1 -1 0 0 1 26 26 1 1 0 30 17   0
+:\PUB\WinEdt\Some_old_macros\sumniki.tex
+TeX
+269488123 0 17 1 27 20 243 243 1078 753 0 212 463 -1 -1 0 0 46 0 0 46 1 0 20 27   0
+:\_STAT100\R\EDA\logfile.tex
+TeX
+1052666 1 54 3 49 1 189 189 921 686 0 22 484 -1 -1 0 0 3 0 0 3 1 0 1 49   0
+:\_STAT100\Stat100-06-01S.tex
+TeX
+1052666 1 110 1 115 12 189 189 1001 703 0 132 190 -1 -1 0 0 114 0 0 114 1 0 12 115   0
+:\_STAT100\R\Poisson\Logfile.Tex
+TeX
+1052667 1 392 1 397 3 162 162 974 671 0 42 295 -1 -1 0 0 3 0 0 3 1 0 3 397   0
+:\_STAT100\STAT100-AS-4-ans.tex
+TeX
+1060859 0 231 28 226 1 162 162 974 710 0 22 85 -1 -1 0 0 1 131 131 1 1 0 1 226   0
+:\_STAT100\STAT100-AS-3.tex
+TeX
+1060859 0 255 36 238 15 162 162 974 710 0 162 284 -1 -1 0 0 1 128 128 1 1 0 15 238   0
+:\_STAT100\STAT100-AS-4.tex
+TeX
+1060859 0 181 7 172 1 162 162 974 710 0 22 295 -1 -1 0 0 1 131 131 1 1 0 1 172   0
+:\Documents and Settings\ablejec\Application Data\WinEdt\answer.tex
+TeX
+1052667 1 2 15 0 1 0 0 812 331 0 22 1 -1 -1 0 0 15 0 0 15 1 0 1 0   0
+:\_STAT100\STAT100-060327S.tex
+TeX
+1052667 0 400 9 205 1 108 108 920 555 0 22 253 -1 -1 0 0 52 0 0 52 1 0 1 205   0
+:\_STAT100\STAT100-060315S.tex
+TeX
+1052667 0 190 3 205 45 108 108 920 555 0 462 253 -1 -1 0 0 52 0 0 52 1 0 45 205   0
+:\_STAT100\STAT100-060315.tex
+TeX
+1052667 0 353 7 347 2 108 108 920 555 0 32 127 -1 -1 0 0 52 0 0 52 1 0 2 347   0
+:\_STAT100\R\Models\Logfile.Tex
+TeX
+1052667 1 465 1 470 3 81 81 884 546 0 42 375 -1 -1 0 0 3 0 0 3 1 0 3 470   0
+:\_STAT100\STAT100-060407S.tex
+TeX
+1052667 0 139 1 4 1 108 108 920 555 0 22 85 -1 -1 0 0 52 0 0 52 1 0 1 4   0
+:\Documents and Settings\ablejec\Desktop\WS_FTP.LOG
+DATA
+273678578 0 0 1 0 1 162 162 997 682 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\texmf\tex\latex\beamer\beamerbasemodes.sty
+TeX:DTX:UNIX
+273780731 0 0 1 0 1 81 81 806 582 0 22 1 -1 -1 0 0 129 0 0 129 1 0 1 0   0
+:\texmf\tex\latex\beamer\beamerbaseoptions.sty
+TeX:DTX:UNIX
+273780731 0 0 1 0 1 135 135 970 655 0 22 -20 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\texmf\tex\latex\beamer\beamerbasemisc.sty
+TeX:DTX:UNIX
+273780731 0 0 1 246 1 54 54 889 574 0 22 715 -1 -1 0 0 -1 -1 -1 -1 1 0 1 246   0
+:\_STAT100\bla.tex
+TeX
+269488123 0 2 15 2 15 0 0 812 331 0 162 43 -1 -1 0 0 15 0 0 15 1 0 15 2   0
+:\texmf\tex\latex\beamer\emulation\examples\beamerexample-foils.tex
+TeX:UNIX
+269586427 0 0 1 32 8 108 108 833 609 0 92 337 -1 -1 0 0 128 0 0 128 1 0 8 32   0
+:\texmf\tex\latex\beamer\emulation\examples\beamerexample-prosper.tex
+TeX:UNIX
+269586427 0 0 1 33 1 135 135 860 636 0 22 232 -1 -1 0 0 130 0 0 130 1 0 1 33   0
+:\texmf\tex\latex\beamer\emulation\examples\beamerexample-seminar.tex
+TeX:UNIX
+269586427 0 0 1 130 18 189 189 941 694 0 192 232 -1 -1 0 0 130 0 0 130 1 0 18 130   0
+:\texmf\tex\latex\beamer\emulation\examples\beamerexample-texpower.tex
+TeX:UNIX
+269586427 2 275 8 275 14 162 162 887 663 0 152 4159 -1 -1 0 0 131 0 0 131 1 0 14 275   0
+:\texmf\tex\plain\base\plain.tex
+TeX:UNIX
+269586427 0 0 1 0 1 189 189 1024 687 0 22 1 -1 -1 0 0 64 0 0 64 1 0 1 0   0
+:\_STAT100\STAT100-060109.tex
+TeX
+269488123 0 0 1 0 1 135 135 1090 644 0 22 -4262 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\STAT100-060403.tex
+TeX
+269488123 0 337 1 266 9 108 108 1143 555 0 102 253 -1 -1 0 0 52 0 0 52 1 0 9 266   0
+:\_STAT100\R\SixSigma\Logfile.Tex
+TeX
+269488123 1 210 1 222 3 0 0 752 505 0 42 516 -1 -1 0 0 3 0 0 3 1 0 3 222   0
+:\_Y\R\Poisson\Logfile.Tex
+TeX
+269488123 0 161 1 198 41 135 135 1090 644 0 422 610 -1 -1 0 0 -1 -1 -1 -1 1 0 41 198   0
+:\_STAT100\STAT100-060331S.tex
+TeX
+269488123 0 2 2 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\_STAT100\STAT100-060331.tex
+TeX
+269488123 0 2 2 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\texmf\tex\latex\beamer\beamerbasearticle.sty
+TeX:DTX:UNIX
+273780731 0 69 24 64 1 54 54 779 555 0 22 -314 -1 -1 0 0 131 0 0 131 1 0 1 64   0
+:\_STAT100\STAT100-060329S.tex
+TeX
+269488123 0 330 20 1 34 108 108 1143 555 0 352 22 -1 -1 0 0 52 0 0 52 1 0 34 1   0
+:\_STAT100\STAT100-AS-3-ans.tex
+TeX
+269496315 0 138 44 138 51 162 162 1078 710 0 522 133 -1 -1 0 0 1 128 128 1 1 0 51 138   0
+:\_STAT100\STAT100-060327.tex
+TeX
+269488123 0 2 2 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\_STAT100\STAT100-060322S.tex
+TeX
+269488123 0 1 25 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\_STAT100\STAT100-060322.tex
+TeX
+269488123 0 1 25 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\52ZRMABR\HW1[1].tex
+TeX:UNIX
+269586427 0 22 50 3 1 54 54 779 555 0 22 64 -1 -1 0 0 -1 -1 -1 -1 1 0 1 3   0
+:\_STAT100\R\EDA\STAT100-060120S.tex
+TeX
+1060859 1 279 1 289 14 54 54 970 602 0 152 448 -1 -1 0 0 114 0 0 114 1 0 14 289   0
+:\_STAT100\STAT100-060301.tex
+TeX
+1052667 0 142 1 0 32 108 108 1143 555 0 332 1 -1 -1 0 0 52 0 0 52 1 0 32 0   0
+:\_STAT100\STAT100-060308S.tex
+TeX
+1052667 0 132 8 132 14 108 108 1143 555 0 152 253 -1 -1 0 0 52 0 0 52 1 0 14 132   0
+:\_STAT100\STAT100-060303.tex
+TeX
+1052667 1 444 1 444 59 108 108 1143 555 0 602 253 -1 -1 0 0 52 0 0 52 1 0 59 444   0
+:\Program Files\WinEdt Team\WinEdt\Exec\Acrobat OpenDoc.edt
+ASCII:EDT
+269486074 0 77 141 77 1 189 189 1429 610 1 92 295 -1 -1 0 0 21 0 0 21 1 0 1 77   0
+:\_STAT100\STAT100-AS-2.tex
+TeX
+1060859 0 147 16 147 15 162 162 1078 710 0 162 426 -1 -1 0 0 114 0 0 114 1 0 15 147   0
+:\Test\beamerexample1.tex
+TeX
+1060859 2 557 10 557 18 27 27 862 513 0 192 442 -1 -1 0 0 114 0 0 114 1 0 18 557   0
+:\_STAT100\STAT100-060213.tex
+TeX
+1052667 1 411 3 412 1 108 108 1143 555 0 22 440 -1 -1 0 0 114 0 0 114 1 0 1 412   0
+:\_STAT100\STAT100-060206.tex
+TeX
+1060859 1 188 1 196 15 108 108 842 466 1 232 426 -1 -1 0 0 114 0 0 114 1 0 15 196   0
+:\_STAT100\STAT100-060310.tex
+TeX
+269488123 0 294 13 332 1 108 108 1143 555 0 22 406 -1 -1 0 0 52 0 0 52 1 0 1 332   0
+:\_STAT100\STAT100-060310S.tex
+TeX
+269488123 0 294 13 444 12 108 108 1143 555 0 132 463 -1 -1 0 0 52 0 0 52 1 0 12 444   0
+:\_STAT100\R\Risk\Logfile.Tex
+TeX
+269488123 0 406 1 403 12 108 108 1143 578 0 132 463 -1 -1 0 0 3 0 0 3 1 0 12 403   0
+:\_STAT100\R\Fraud\Logfile.Tex
+TeX
+269488123 0 7 1 5 3 162 162 1029 552 0 42 106 -1 -1 0 0 3 0 0 3 1 0 3 5   0
+:\_STAT100\STAT100-060303S.tex
+TeX
+269488123 0 529 172 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 52 0 0 52 1 0 2 4   0
+:\_STAT100\STAT100-060308.tex
+TeX
+269488123 0 214 38 2 1 108 108 1143 555 0 22 43 -1 -1 0 0 52 0 0 52 1 0 1 2   0
+:\_STAT100\STAT100-060224.tex
+TeX
+269488123 0 643 13 643 17 108 108 1143 555 0 182 337 -1 -1 0 0 52 0 0 52 1 0 17 643   0
+:\_STAT100\STAT100-060224S.tex
+TeX
+269488123 0 643 13 643 17 108 108 1143 555 0 182 337 -1 -1 0 0 52 0 0 52 1 0 17 643   0
+:\_STAT100\STAT100-060301S.tex
+TeX
+269488123 0 299 8 4 1 108 108 1143 555 0 22 85 -1 -1 0 0 52 0 0 52 1 0 1 4   0
+:\texmf\miktex\config\update-2005-11-28-23-11.log
+DATA
+273678578 0 0 1 0 1 216 216 1219 716 1 92 1 -1 -1 0 0 1 0 0 1 1 0 1 0   0
+:\texmf\miktex\config\setup-2004-05-09-21-05.log
+DATA
+273678578 0 0 1 0 1 189 189 1192 689 1 92 1 -1 -1 0 0 77 0 0 77 1 0 1 0   0
+:\_STAT100\test.tex
+TeX
+269488123 0 709 1 709 1 108 108 1143 555 0 22 456 -1 -1 0 0 52 0 0 52 1 0 1 709   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Beamer\frame.edt
+ASCII:EDT
+269486074 0 12 4 12 7 135 135 840 641 1 152 85 -1 -1 0 0 1 46 46 1 1 0 7 12   0
+:\_STAT100\STAT100-060215.tex
+TeX
+269488123 0 3 16 3 22 108 108 1143 555 0 232 64 -1 -1 0 0 52 0 0 52 1 0 22 3   0
+:\_STAT100\STAT100-060210cmS.tex
+TeX
+269488123 0 404 22 115 1 108 108 1143 555 0 22 134 -1 -1 0 0 114 0 0 114 1 0 1 115   0
+:\PUB\LaTeX\beameruserguide.pdf
+DATA:UNIX
+273776882 0 0 1 0 1 216 216 869 749 1 92 1 -1 -1 0 0 9 0 0 9 1 0 1 0   0
+:\_STAT100\STAT100-060215S.tex
+TeX
+269488123 0 638 1 4 1 108 108 1143 555 0 22 85 -1 -1 0 0 52 0 0 52 1 0 1 4   0
+:\_STAT100\STAT100-060210cm.tex
+TeX
+269488122 0 2 2 4 2 108 108 1143 555 0 32 85 -1 -1 0 0 114 0 0 114 1 0 2 4   0
+:\_STAT100\STAT100-060213S.tex
+TeX
+269488123 0 34 23 5 31 108 108 1143 555 0 322 106 -1 -1 0 0 114 0 0 114 1 0 31 5   0
+:\My Documents\Kongresi\2005_Bioinfo-2\Prezentacija\Primer.tex
+TeX:UNIX
+1159163 0 283 1 190 14 81 81 707 669 0 152 337 -1 -1 0 0 143 0 0 143 1 0 14 190   0
+:\_STAT100\R\SWeave\test1.tex
+TeX
+1052666 0 3 37 8 15 0 0 869 453 0 162 169 -1 -1 0 0 39 0 0 39 1 0 15 8   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Beamer\QA.edt
+ASCII:EDT
+1050618 0 9 4 9 4 0 0 999 515 1 122 106 -1 -1 0 0 28 0 0 28 1 0 4 9   0
+:\_STAT100\STAT100-060201.tex
+TeX
+1060859 0 226 51 226 51 108 108 842 466 0 522 623 -1 -1 0 0 114 0 0 114 1 0 51 226   0
+:\_STAT100\STAT100-AS-2-answers.tex
+TeX
+1060859 0 122 8 120 22 162 162 1078 710 0 232 421 -1 -1 0 0 114 0 0 114 1 0 22 120   0
+:\_STAT100\STAT100-060130S.tex
+TeX
+1060859 1 178 2 178 11 108 108 842 466 0 122 194 -1 -1 0 0 114 0 0 114 1 0 11 178   0
+:\_STAT100\R\Regression\Logfile.Tex
+TeX
+1052666 1 651 1 664 1 54 54 950 511 0 22 332 -1 -1 0 0 3 0 0 3 1 0 1 664   0
+:\_STAT100\STAT100-060208.tex
+TeX
+1052666 1 234 2 234 49 27 27 896 480 0 502 256 -1 -1 0 0 114 0 0 114 1 0 49 234   0
+:\_STAT100\STAT100-060210S.tex
+TeX
+269488122 0 82 26 82 28 27 27 896 480 0 292 -1361 -1 -1 0 0 114 0 0 114 1 0 28 82   0
+:\_STAT100\STAT100-060208cm.tex
+TeX
+269488122 0 91 26 2 2 108 108 1143 555 0 32 43 -1 -1 0 0 114 0 0 114 1 0 2 2   0
+:\_STAT100\STAT100-060208S.tex
+TeX
+269488122 0 82 26 82 28 27 27 896 480 0 292 -983 -1 -1 0 0 114 0 0 114 1 0 28 82   0
+:\_STAT100\STAT100-060208cmS.tex
+TeX
+269488122 0 91 26 91 28 108 108 1143 555 0 292 1912 -1 -1 0 0 114 0 0 114 1 0 28 91   0
+:\_STAT100\STAT100-060208test.tex
+TeX
+269488122 0 124 23 112 1 27 27 896 480 0 22 127 -1 -1 0 0 114 0 0 114 1 0 1 112   0
+:\_STAT100\STAT100-060206S.tex
+TeX
+269488122 0 4 2 4 1 27 27 896 480 0 22 85 -1 -1 0 0 114 0 0 114 1 0 1 4   0
+:\_Y\rw2001\share\texmf\Rd.sty
+TeX:DTX:UNIX
+273780730 0 0 1 0 1 189 189 1058 642 0 22 1 -1 -1 0 0 47 0 0 47 1 0 1 0   0
+:\_Y\rw2001\share\texmf\Sweave.sty
+TeX:DTX:UNIX
+273780730 0 0 1 0 1 216 216 1085 669 0 22 1 -1 -1 0 0 29 0 0 29 1 0 1 0   0
+:\_STAT100\R\SWeave\STAT100-060206.tex
+TeX
+269496315 0 121 33 124 14 108 108 842 466 1 222 295 -1 -1 0 0 114 0 0 114 1 0 14 124   0
+:\_Y\R\Stat-Vaje\Logfile.Tex
+TeX
+269488122 1 0 1 12 3 108 108 809 506 0 42 253 -1 -1 0 0 3 0 0 3 1 0 3 12   0
+:\_STAT100\R\Stock\Logfile.Tex
+TeX
+269488122 0 2625 1 2659 3 162 162 1161 676 0 42 593 -1 -1 0 0 3 0 0 3 1 0 3 2659   0
+:\_STAT100\STAT100-060201S.tex
+TeX
+269496315 0 133 24 131 31 108 108 842 466 0 322 306 -1 -1 0 0 114 0 0 114 1 0 31 131   0
+:\_STAT100\STAT100-060130.tex
+TeX
+269496315 0 618 35 599 1 108 108 842 466 0 22 143 -1 -1 0 0 114 0 0 114 1 0 1 599   0
+:\_STAT100\STAT100-AS-1.tex
+TeX
+269496315 0 135 3 137 9 162 162 1078 710 0 102 547 -1 -1 0 0 114 0 0 114 1 0 9 137   0
+:\_STAT100\STAT100-060127.tex
+TeX
+269496315 0 124 3 121 48 108 108 842 466 0 492 180 -1 -1 0 0 114 0 0 114 1 0 48 121   0
+:\_STAT100\STAT100-060125S.tex
+TeX
+1060859 1 515 62 515 69 108 108 842 466 0 702 5421 -1 -1 0 0 114 0 0 114 1 0 69 515   0
+:\_STAT100\STAT100-060111S.tex
+TeX
+1060859 0 171 1 237 1 54 54 970 602 0 22 736 -1 -1 0 0 114 0 0 114 1 0 1 237   0
+:\_STAT100\STAT100-060127S.tex
+TeX
+269496315 0 3 2 4 1 108 108 842 466 0 22 85 -1 -1 0 0 114 0 0 114 1 0 1 4   0
+:\_STAT100\STAT100-060125.tex
+TeX
+269496315 0 435 7 515 69 108 108 842 466 0 702 358 -1 -1 0 0 114 0 0 114 1 0 69 515   0
+:\_STAT100\STAT100-060125Ss.tex
+TeX
+269496315 5 505 62 505 63 108 108 842 466 0 642 274 -1 -1 0 0 114 0 0 114 1 0 63 505   0
+:\_STAT100\STAT100-060123S.tex
+TeX
+269496314 0 81 26 81 27 108 108 842 466 0 282 344 -1 -1 0 0 114 0 0 114 1 0 27 81   0
+:\_STAT100\STAT100-060120S.tex
+TeX
+1060859 1 179 1 184 12 54 54 970 602 1 202 295 -1 -1 0 0 114 0 0 114 1 0 12 184   0
+:\_STAT100\fragment1.tex
+TeX
+1052666 1 25 1 61 1 162 162 863 560 0 22 43 -1 -1 0 0 25 0 0 25 1 0 1 61   0
+:\_STAT100\R\EDA\pop50.tex
+TeX
+1052666 0 35 16 34 16 54 54 674 581 0 172 106 -1 -1 0 0 16 0 0 16 1 0 16 34   0
+:\_Y\My Documents\Sheet1.tex
+TeX
+1052666 0 0 1 5 14 0 0 705 503 0 152 106 -1 -1 0 0 20 0 0 20 1 0 14 5   0
+:\_STAT100\STAT100-Intro.tex
+TeX
+1052666 1 152 2 152 50 27 27 647 554 0 512 358 -1 -1 0 0 114 0 0 114 1 0 50 152   0
+:\_STAT100\R\logfile.tex
+TeX
+1052666 1 424 1 429 3 216 216 1308 764 0 42 521 -1 -1 0 0 19 0 0 19 1 0 3 429   0
+:\_STAT100\STAT100-060115S.tex
+TeX
+1060859 1 194 1 198 12 54 54 970 602 0 132 485 -1 -1 0 0 114 0 0 114 1 0 12 198   0
+:\_STAT100\STAT100-AS-1-solutions.tex
+TeX
+1060859 0 176 3 176 96 162 162 1078 710 0 912 694 -1 -1 0 0 114 0 0 114 1 0 96 176   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Table.edt
+ASCII:EDT
+269486074 0 0 1 0 1 243 243 948 746 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\LaTeX\LaTeXDoc.edt
+ASCII:EDT
+269486074 0 0 1 0 1 216 216 921 719 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Active Strings\Graphics.edt
+ASCII:EDT
+269486074 0 0 1 0 1 189 189 894 692 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Active Strings\Cite.edt
+ASCII:EDT
+269486074 0 0 1 0 1 162 162 867 665 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Active Strings\ChangeEnv.edt
+ASCII:EDT
+269486074 0 0 1 0 1 135 135 840 638 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Mail\GetSupport.edt
+ASCII:EDT
+269486074 0 0 1 0 1 108 108 813 611 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Mail\SendToList.edt
+ASCII:EDT
+269486074 0 0 1 0 1 81 81 786 584 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Fonts\Bold.edt
+ASCII:EDT
+269486074 0 0 1 0 1 54 54 759 557 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Sections\CommonSections.edt
+ASCII:EDT
+269486074 0 0 1 17 10 0 0 705 506 1 182 358 -1 -1 0 0 -1 -1 -1 -1 1 0 10 17   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Sections\Title.edt
+ASCII:EDT
+269486074 0 0 1 0 1 27 27 732 530 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Sections\Section.edt
+ASCII:EDT
+269486074 0 0 1 0 1 243 243 948 749 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Samples\Acroread CloseDoc.edt
+ASCII:EDT
+269486074 0 0 1 0 1 0 0 705 506 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Samples\DDEMailBat!.edt
+ASCII:EDT
+1050618 0 0 1 0 1 216 216 921 722 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Samples\DDEPegasus.edt
+ASCII:EDT
+1050618 0 0 1 0 1 189 189 894 695 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Samples\Table Paste.edt
+ASCII:EDT
+1050618 0 0 1 0 1 162 162 867 668 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Macros\Samples\over2frac2.edt
+ASCII:EDT
+269486074 0 0 1 0 1 243 243 948 749 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\blas.tex
+TeX
+269496314 0 224 13 224 57 108 108 842 466 0 582 337 -1 -1 0 0 114 0 0 114 1 0 57 224   0
+:\_STAT100\bla.pdf
+DATA:UNIX
+273776882 0 0 1 0 1 0 0 701 398 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\STAT100-060120.tex
+TeX
+269496315 0 730 2 2 1 54 54 970 602 0 22 43 -1 -1 0 0 114 0 0 114 1 0 1 2   0
+:\_STAT100\R\EDA\bla.tex
+TeX
+269496315 0 237 1 4 1 54 54 970 602 0 22 85 -1 -1 0 0 114 0 0 114 1 0 1 4   0
+:\_STAT100\STAT100-060118S.tex
+TeX
+269496315 0 519 20 529 7 54 54 970 602 0 82 11110 -1 -1 0 0 114 0 0 114 1 0 7 529   0
+:\_STAT100\STAT 100-Course Outline-06-3.pdf
+DATA
+273744114 0 0 1 0 1 0 0 620 527 1 92 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\STAT100-060118.tex
+TeX
+269496315 0 437 27 4 2 54 54 970 602 0 32 85 -1 -1 0 0 114 0 0 114 1 0 2 4   0
+:\_STAT100\R\savePlot.tex
+TeX
+269488122 0 0 1 0 1 0 0 1092 548 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\R\sds.tex
+TeX
+269488122 0 0 1 0 1 243 243 1335 791 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+:\_STAT100\STAT100-060117.tex
+TeX
+269496315 0 6 2 4 1 54 54 970 602 0 22 -1658 -1 -1 0 0 114 0 0 114 1 0 1 4   0
+:\_STAT100\STAT100-060117S.tex
+TeX
+269496315 0 232 5 232 7 54 54 970 602 0 82 4873 -1 -1 0 0 114 0 0 114 1 0 7 232   0
+:\_STAT100\STAT100-060115.tex
+TeX
+269496315 0 121 92 121 98 54 54 970 602 0 992 502 -1 -1 0 0 114 0 0 114 1 0 98 121   0
+:\My Documents\Kongresi\2005_Bioinfo-2\Prezentacija-2\Bioinfo2005b.tex
+TeX:UNIX
+1159163 1 156 1 161 12 108 108 734 696 0 132 443 -1 -1 0 0 143 0 0 143 1 0 12 161   0
+:\texmf\tex\latex\beamer\beamerarticle.sty
+TeX:DTX:UNIX
+273788923 0 0 1 0 1 81 81 734 594 0 22 1 -1 -1 0 0 37 0 0 37 1 0 1 0   0
+:\Documents and Settings\ablejec\Desktop\Communicate\wireless.txt
+ASCII
+273754107 0 0 1 0 1 81 81 734 614 0 22 1 -1 -1 0 0 1 0 0 1 1 0 1 0   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\A9RWPSNQ\beamer[1].html
+HTML:UNIX
+269584379 0 -1 0 -1 0 189 189 842 722 0 22 1 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1   0
+:\My Documents\Kongresi\2005_Bioinfo-2\Prezentacija\Bioinfo2005a.log
+DATA
+273678578 0 0 1 899 1 81 81 707 669 1 92 421 -1 -1 0 0 114 0 0 114 1 0 1 899   0
+:\My Documents\Kongresi\2005_Bioinfo-2\Prezentacija\kosi2.tex
+TeX
+269496315 1 31 1 32 16 81 81 707 669 0 172 673 -1 -1 0 0 24 0 0 24 1 0 16 32   0
+:\My Documents\Kongresi\2005_Bioinfo-2\Prezentacija\Bioinfo2005a.tex
+TeX:UNIX
+269594619 0 416 1 100 2 81 81 707 669 0 32 419 -1 -1 0 0 143 0 0 143 1 0 2 100   0
+:\My Documents\Kongresi\2005_Bioinfo\Prezentacija\Bioinfo2005a.tex
+TeX:UNIX
+269594619 0 133 10 4 40 81 81 707 669 0 412 -356 -1 -1 0 0 143 0 0 143 1 0 40 4   0
+:\My Documents\Kongresi\2005_Bioinfo\Prezentacija\Bioinfo2005a.log
+DATA
+273678578 0 578 60 578 48 108 108 734 696 1 562 421 -1 -1 0 0 114 0 0 114 1 0 48 578   0
+:\texmf\tex\latex\beamer\solutions\generic-talks\generic-ornate-15min-45min.en.tex
+TeX:UNIX
+269594619 0 67 21 67 61 54 54 983 638 0 622 799 -1 -1 0 0 143 0 0 143 1 0 61 67   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\BF57394W\02[1].log
+DATA:UNIX
+273776882 0 0 1 0 1 81 81 707 669 1 92 1 -1 -1 0 0 86 0 0 86 1 0 1 0   0
+:\PUB\MikTex\download-2004-04-26-14-15.log
+DATA
+273678578 0 0 1 15 28 27 27 1356 637 1 362 316 -1 -1 0 0 77 0 0 77 1 0 28 15   0
+:\Program Files\WinEdt Team\WinEdt\WinEdt.txt
+ASCII
+5253050 0 0 1 0 1 27 27 808 572 0 22 1 -1 -1 0 0 75 0 0 75 1 0 1 0   0
+:\Program Files\R\rw2010pat\library\grid\doc\grid.bib
+BibTeX:UNIX
+1147826 0 0 1 6 1 27 27 862 513 0 22 127 -1 -1 0 0 23 0 0 23 1 0 1 6   0
+:\Program Files\Web Publish\LOGFILES\CRSWPP.LOG
+DATA
+5243570 0 0 1 0 1 54 54 889 540 0 22 1 -1 -1 0 0 99 0 0 99 1 0 1 0   0
+Y:\MyTeX\Poster3\myposter.tex
+TeX:UNIX
+1159163 1 213 1 223 23 0 0 781 591 0 242 484 -1 -1 0 0 31 0 0 31 1 0 23 223   0
+Y:\MyTeX\Poster3\myposter3.tex
+TeX:UNIX
+1159163 1 62 20 62 45 0 0 781 591 0 462 169 -1 -1 0 0 31 0 0 31 1 0 45 62   0
+Y:\MyTeX\porocilo2.tex
+TeX
+1060859 0 127 35 127 36 108 108 889 653 0 372 400 -1 -1 0 0 52 0 0 52 1 0 36 127   0
+Y:\MyTeX\Poster3\myposter3a1.tex
+TeX:UNIX
+1159163 0 0 1 0 1 81 81 862 626 0 22 1 -1 -1 0 0 31 0 0 31 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Exec\MiKTeX\TeX System.edt
+ASCII:EDT
+269494202 0 57 37 57 42 27 27 807 618 0 432 1198 -1 -1 0 0 21 0 0 21 1 0 42 57   0
+Y:\MyTeX\Poster3\myposter2.tex
+TeX:UNIX
+269594619 0 207 10 76 31 0 0 781 591 0 322 85 -1 -1 0 0 31 0 0 31 1 0 31 76   0
+Y:\MyTeX\Poster3\UFposter.tex
+TeX:UNIX
+269594619 0 189 1 176 61 0 0 781 591 0 622 85 -1 -1 0 0 31 0 0 31 1 0 61 176   0
+Y:\MyTeX\poster0\posterslides-example.tex
+TeX:UNIX
+269594619 0 232 222 233 16 54 54 835 645 0 172 400 -1 -1 0 0 44 0 0 44 1 0 16 233   0
+Y:\MyTeX\Poster1\dummy_poster.tex
+TeX:UNIX
+269594619 7 91 1 91 42 0 0 780 591 0 432 295 -1 -1 0 0 38 0 0 38 1 0 42 91   0
+Y:\MyTeX\Poster2\poster.tex
+TeX
+269496315 0 22 35 159 1 27 27 808 618 0 22 253 -1 -1 0 0 29 0 0 29 1 0 1 159   0
+:\texmf\tex\latex\graphics\pstcol.sty
+TeX
+269496315 7 40 1 40 26 54 54 916 508 0 272 316 -1 -1 0 0 3 0 0 3 1 0 26 40   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Paper.tex
+TeX
+269496315 0 276 182 5 28 54 54 834 645 0 292 106 -1 -1 0 0 75 0 0 75 1 0 28 5   0
+Y:\MyTeX\Poster1\poster-template-landscape.tex
+TeX:UNIX
+269594619 0 0 1 160 1 81 81 862 672 0 22 715 -1 -1 0 0 -1 -1 -1 -1 1 0 1 160   0
+Y:\MyTeX\Poster1\a0poster.cls
+DATA:UNIX
+5341874 0 0 1 3 4 27 27 808 618 0 52 64 -1 -1 0 0 55 0 0 55 1 0 4 3   0
+Y:\MyTeX\Poster2\a0size.sty
+TeX
+1060859 0 0 1 0 1 54 54 835 645 0 22 1 -1 -1 0 0 3 0 0 3 1 0 1 0   0
+Y:\MyTeX\Poster2\postermoj.tex
+TeX
+269496315 0 22 35 8 1 27 27 808 618 0 22 169 -1 -1 0 0 -1 -1 -1 -1 1 0 1 8   0
+Y:\MyTeX\Poster1\poster1.tex
+TeX:UNIX
+269594619 0 0 1 0 19 0 0 780 591 0 202 1 -1 -1 0 0 -1 -1 -1 -1 1 0 19 0   0
+Y:\MyTeX\Motivi\mOTIVI.log
+DATA
+273679026 0 0 1 0 1 0 0 780 591 0 22 1 -1 -1 0 0 119 0 0 119 1 0 1 0   0
+Y:\MyTeX\Motivi\mOTIVI.aux
+DATA
+273679026 0 0 1 0 1 243 243 1023 834 0 22 1 -1 -1 0 0 8 0 0 8 1 0 1 0   0
+\\entomologija\entomologija\Software\Program Files\CeQuadrat\WinOnCD\WINONCD.LOG
+DATA
+273679026 0 0 1 0 1 270 270 1050 861 0 22 1 -1 -1 0 0 13 0 0 13 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Talk-Slides.tex
+TeX
+269496315 0 4 1 5 36 81 81 861 672 0 372 106 -1 -1 0 0 67 0 0 67 1 0 36 5   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Xbib.bib
+BibTeX
+269484978 0 0 1 0 1 135 135 915 726 0 22 1 -1 -1 0 0 75 0 0 75 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Submit2.tex
+TeX
+269496315 0 0 1 0 1 162 162 942 753 0 22 1 -1 -1 0 0 79 0 0 79 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Tran-l.cls
+DATA:UNIX
+273777330 0 0 1 2 15 216 216 996 807 0 162 43 -1 -1 0 0 80 0 0 80 1 0 15 2   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Talk-Main.tex
+TeX
+269496315 0 0 1 0 1 108 108 969 562 0 22 1 -1 -1 0 0 67 0 0 67 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Samples\Paper\Submit1.tex
+TeX
+269496315 0 0 1 0 1 189 189 969 780 0 22 1 -1 -1 0 0 79 0 0 79 1 0 1 0   0
+:\Program Files\WinEdt Team\WinEdt\Config\Startup.edt
+ASCII:EDT
+269494202 0 0 1 146 19 0 0 780 617 0 202 337 -1 -1 0 0 24 0 0 24 1 0 19 146   0
+:\Documents and Settings\ablejec\Local Settings\Temporary Internet Files\Content.IE5\8X69QZY7\Sw2Rus[1].sty
+TeX
+269496315 0 0 1 0 1 81 81 861 672 0 22 -356 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0   0
+
+*doc\analizaosebnih.Rnw
+>
+*abBeam
+*abcmd
+*mysweaveB
+*ab-general.bib
+<

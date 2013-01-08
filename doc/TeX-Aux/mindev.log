@@ -1,0 +1,1069 @@
+This is pdfTeX, Version 3.141592-1.40.7 (MiKTeX 2.7) (preloaded format=pdflatex 2008.3.13)  23 APR 2008 23:18
+entering extended mode
+**mindev.tex
+(mindev.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman, ngerman, french, slovenian, loaded.
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\article.cls"
+Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\size12.clo"
+File: size12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\babel.sty"
+Package: babel 2005/11/23 v3.8h The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\slovene.ldf"
+Language: slovene 2005/03/31 v1.2m Slovene support from the babel system
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\babel\babel.def"
+File: babel.def 2005/11/23 v3.8h Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 79.
+))
+(C:\_Y\localtexmf\tex\abpkg.tex
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\inputenc.sty"
+Package: inputenc 2006/05/05 v1.1b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\cp1250.def"
+File: cp1250.def 2006/05/05 v1.1b Input encoding file
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\ltxmisc\here.sty")
+("C:\Program Files\MiKTeX 2.7\tex\latex\natbib\natbib.sty"
+Package: natbib 2007/10/30 8.1 (PWD)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 602.
+\c@NAT@ctr=\count88
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\graphics.sty"
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 90.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\pdftex.def"
+File: pdftex.def 2007/06/12 v0.04h Graphics/color for pdfTeX
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\ctable\ctable.sty"
+Package: ctable 2007/09/07 v1.11 ctable package
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2006/11/18 v2.5f package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks17
+\XKV@depth=\count90
+File: xkeyval.tex 2006/11/18 v2.5f key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\tools\array.sty"
+Package: array 2005/08/23 v2.4b Tabular extension package (FMi)
+\col@sep=\dimen106
+\extrarowheight=\dimen107
+\NC@list=\toks18
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\tools\tabularx.sty"
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+\TX@col@width=\dimen108
+\TX@old@table=\dimen109
+\TX@old@col=\dimen110
+\TX@target=\dimen111
+\TX@delta=\dimen112
+\TX@cols=\count91
+\TX@ftn=\toks19
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen113
+\lightrulewidth=\dimen114
+\cmidrulewidth=\dimen115
+\belowrulesep=\dimen116
+\belowbottomsep=\dimen117
+\aboverulesep=\dimen118
+\abovetopsep=\dimen119
+\cmidrulesep=\dimen120
+\cmidrulekern=\dimen121
+\defaultaddspace=\dimen122
+\@cmidla=\count92
+\@cmidlb=\count93
+\@aboverulesep=\dimen123
+\@belowrulesep=\dimen124
+\@thisruleclass=\count94
+\@lastruleclass=\count95
+\@thisrulewidth=\dimen125
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\rotating\rotating.sty"
+Package: rotating 1997/09/26 v2.13 Rotation package
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count96
+\rot@float@box=\box26
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\caption\caption.sty"
+Package: caption 2007/12/23 v3.1f Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\caption\caption3.sty"
+Package: caption3 2007/12/21 v3.1f caption3 kernel (AR)
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@indent=\dimen129
+\caption@parindent=\dimen130
+\caption@hangindent=\dimen131
+)
+\c@ContinuedFloat=\count97
+Package caption Info: rotating package is loaded.
+)
+\@ctblframesep=\dimen132
+\@ctblframerule=\dimen133
+\@ctblwidth=\dimen134
+\@ctblcaptionskip=\dimen135
+\@ctblmaxwidth=\dimen136
+\@ctblmincapwidth=\dimen137
+\@ctblw=\dimen138
+\@ctblfloatwidth=\dimen139
+\@ctbloldsep=\dimen140
+\@ctbloldrule=\dimen141
+\ctbl@t=\box27
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\fancyvrb\fancyvrb.sty"
+Package: fancyvrb 1998/07/17
+
+Style option: `fancyvrb' v2.6, with DG/SPQR fixes <1998/07/17> (tvz)
+\FV@CodeLineNo=\count98
+\FV@InFile=\read1
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count99
+\FV@StepNumber=\count100
+\FV@OutFile=\write3
+
+No file fancyvrb.cfg.
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\comment\comment.sty"
+\CommentStream=\write4
+
+Excluding comment 'comment') (C:\_Y\localtexmf\tex\latex\Srcltx\srcltx.sty
+Package: srcltx 1999/10/11 v1.002 DVI Search
+\PAGETOP=\count101
+\LASTLINE=\count102
+\INPSP=\count103
+\everypar=\toks20
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\listings.sty"
+\lst@mode=\count104
+\lst@gtempboxa=\box29
+\lst@token=\toks21
+\lst@length=\count105
+\lst@currlwidth=\dimen142
+\lst@column=\count106
+\lst@pos=\count107
+\lst@lostspace=\dimen143
+\lst@width=\dimen144
+\lst@newlines=\count108
+\lst@lineno=\count109
+\lst@maxwidth=\dimen145
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count110
+\lst@skipnumbers=\count111
+\lst@framebox=\box30
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\hyperref\backref.sty"
+Package: backref 2006/09/05 v1.28 Bibliographical back referencing
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\lstlang2.sty"
+File: lstlang2.sty 2004/09/05 1.3 listings language file
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\listings\lstlang3.sty"
+File: lstlang3.sty 2004/09/05 1.3 listings language file
+)
+(C:\_Y\localtexmf\tex\latex\notes\notes.sty
+Package: notes 2002/10/29 v1.0.1 (Duncan Webb)
+\noteskipamount=\skip47
+\textwidth=\dimen146
+\marparsep=\dimen147
+\rulewd=\dimen148
+\ruleht=\dimen149
+\iconwd=\dimen150
+\iconht=\dimen151
+\textwd=\dimen152
+\vframegap=\dimen153
+\hframegap=\dimen154
+\c@notecnt=\count112
+\containerwd=\dimen155
+\textframeht=\dimen156
+\iconframeht=\dimen157
+\containerht=\dimen158
+\notesmargin=\dimen159
+\dbgrulewd=\dimen160
+\dbgruleht=\dimen161
+\iconframe=\box31
+\textframe=\box32
+\iconcontainer=\box33
+\textcontainer=\box34
+\container=\box35
+\notesbox=\box36
+\pageleft=\dimen162
+\notesboxht=\dimen163
+\notebox=\box37
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\setspace\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2008/01/09 v6.77i Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2007/04/11 v1.1 Code for color options of hyperref/bookmark (H
+O)
+)
+\@linkdim=\dimen164
+\Hy@linkcounter=\count113
+\Hy@pagecounter=\count114
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2008/01/09 v6.77i Hyperref: PDFDocEncoding definition (HO)
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2007/10/18 v3.0 Keyval support for LaTeX options (HO)
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 2686.
+
+
+Package hyperref Warning: Values of option `pdfpagemode':
+(hyperref)                * `UseNone'
+(hyperref)                * `UseOutlines'
+(hyperref)                * `UseThumbs'
+(hyperref)                * `FullScreen'
+(hyperref)                * `UseOC' (PDF 1.5)
+(hyperref)                * `UseAttachments' (PDF 1.6)
+(hyperref)                * An empty value disables the option.
+(hyperref)                Unknown value `UseOutline' on input line 2686.
+
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 2686.
+Package hyperref Info: Option `pageanchor' set `true' on input line 2686.
+Package hyperref Info: Option `bookmarks' set `true' on input line 2686.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 2686.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 2686
+.
+Package hyperref Info: Hyper figures OFF on input line 2722.
+Package hyperref Info: Link nesting OFF on input line 2727.
+Package hyperref Info: Hyper index ON on input line 2730.
+Package hyperref Info: Plain pages OFF on input line 2737.
+Package hyperref Info: Backreferencing OFF on input line 2742.
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2898.
+LaTeX Info: Redefining \url on input line 3068.
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\bitset.sty"
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\intcalc.sty"
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\bigintcalc.sty"
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2007/12/12 v0.3 LuaTeX support for pdfTeX utility functions
+ (HO)
+Package pdftexcmds Info: LuaTeX not detected on input line 139.
+)))
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2007/09/29 v1.3 Key value parser with default handler suppor
+t (HO)
+)
+\Fld@menulength=\count115
+\Field@Width=\dimen165
+\Fld@charsize=\dimen166
+\Field@toks=\toks22
+Package hyperref Info: Hyper figures OFF on input line 3949.
+Package hyperref Info: Link nesting OFF on input line 3954.
+Package hyperref Info: Hyper index ON on input line 3957.
+Package hyperref Info: backreferencing OFF on input line 3964.
+Package hyperref Info: Link coloring ON on input line 3967.
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2007/09/09 v1.6 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.7\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2007/12/12 v1.6 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+))
+\Hy@abspage=\count116
+\c@Item=\count117
+)
+*hyperref using default driver hpdftex*
+("C:\Program Files\MiKTeX 2.7\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2008/01/09 v6.77i Hyperref driver for pdfTeX
+\Fld@listcount=\count118
+))
+(C:\_Y\localtexmf\tex\abcmd.tex
+\c@zakljucki=\count119
+\c@naloga=\count120
+) (C:\_Y\localtexmf\tex\abpage.tex)
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgf.sty
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\utilities\pgfrcs.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\utilities\pgfutil-common.tex)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\utilities\pgfutil-latex.def)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\utilities\pgfrcs.code.tex
+Package: pgfrcs 2007/06/08 v1.18 (rcs-revision 1.16)
+))
+Package: pgf 2007/01/01 v1.18 (rcs-revision 1.8)
+
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfcore.sty
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\systemlayer\pgfsys.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgfsys.code.tex
+Package: pgfsys 2007/06/07 v1.18 (rcs-revision 1.24)
+\pgf@x=\dimen167
+\pgf@y=\dimen168
+\pgf@xa=\dimen169
+\pgf@ya=\dimen170
+\pgf@xb=\dimen171
+\pgf@yb=\dimen172
+\pgf@xc=\dimen173
+\pgf@yc=\dimen174
+\c@pgf@counta=\count121
+\c@pgf@countb=\count122
+\c@pgf@countc=\count123
+\c@pgf@countd=\count124
+
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2007/03/20  (rcs-revision 1.4)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 846.
+
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2007/06/07  (rcs-revision 1.15)
+
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2006/10/16  (rcs-revision 1.7)
+)))
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2007/02/19  (rcs-revision 1.5)
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) ("C:\Program Files\MiKTeX 2.7\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcore.code.tex
+Package: pgfcore 2007/03/09 v1.18 (rcs-revision 1.5)
+
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmath.code.tex
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathcalc.code.tex
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathutil.code.tex)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathparser.code.tex
+\pgfmath@stack=\toks23
+\c@pgfmath@parsecounta=\count125
+\c@pgfmath@parsecountb=\count126
+\c@pgfmath@parsecountc=\count127
+\pgfmath@parsex=\dimen175
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathoperations.code.tex
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathtrig.code.tex)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathrnd.code.tex))
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\math\pgfmathbase.code.tex)))
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2007/04/19  (rcs-revision 1.9)
+\pgf@picminx=\dimen176
+\pgf@picmaxx=\dimen177
+\pgf@picminy=\dimen178
+\pgf@picmaxy=\dimen179
+\pgf@pathminx=\dimen180
+\pgf@pathmaxx=\dimen181
+\pgf@pathminy=\dimen182
+\pgf@pathmaxy=\dimen183
+\pgf@xx=\dimen184
+\pgf@xy=\dimen185
+\pgf@yx=\dimen186
+\pgf@yy=\dimen187
+\pgf@zx=\dimen188
+\pgf@zy=\dimen189
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2007/06/07  (rcs-revision 1.9)
+\pgf@path@lastx=\dimen190
+\pgf@path@lasty=\dimen191
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2007/03/09  (rcs-revision 1.8)
+\pgf@shorten@end@additional=\dimen192
+\pgf@shorten@start@additional=\dimen193
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2007/06/07  (rcs-revision 1.24)
+\pgfpic=\box38
+\pgf@hbox=\box39
+\pgf@layerbox@main=\box40
+\pgf@picture@serial@count=\count128
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2007/03/09  (rcs-revision 1.7)
+\pgflinewidth=\dimen194
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2007/06/07  (rcs-revision 1.6)
+\pgf@pt@x=\dimen195
+\pgf@pt@y=\dimen196
+\pgf@pt@temp=\dimen197
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2007/03/09  (rcs-revision 1.6)
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
+)
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2007/03/09  (rcs-revision 1.8)
+\pgf@max=\dimen198
+\pgf@sys@shading@range@num=\count129
+))) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbaseshapes.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbaseshapes.code.tex
+Package: pgfbaseshapes 2007/06/07 v1.18 (rcs-revision 1.19)
+\pgfnodeparttextbox=\box41
+)) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbaseplot.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbaseplot.code.tex
+Package: pgfbaseplot 2007/05/02 v1.18 (rcs-revision 1.7)
+\pgf@plotwrite=\write5
+))
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbaseimage.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbaseimage.code.tex
+Package: pgfbaseimage 2007/05/31 v1.18 (rcs-revision 1.7)
+\pgfexternal@startupbox=\box42
+))
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbaselayers.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbaselayers.code.tex
+Package: pgfbaselayers 2006/10/16 v1.18 (rcs-revision 1.5)
+)) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbasesnakes.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbasesnakes.code.tex
+Package: pgfbasesnakes 2007/03/09 v1.18 (rcs-revision 1.11)
+\pgfsnakeremainingdistance=\dimen199
+\pgfsnakecompleteddistance=\dimen200
+)) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbasepatterns.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbasepatterns.code.tex
+Package: pgfbasepatterns 2007/02/05 v1.18 (rcs-revision 1.10)
+)) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\basiclayer\pgfbasematrix.sty
+(C:\_Y\localtexmf\tex\latex\pgf\generic\pgf\basiclayer\pgfbasematrix.code.tex
+Package: pgfbasematrix 2007/03/09 v1.18 (rcs-revision 1.11)
+\pgfmatrixcurrentrow=\count130
+\pgfmatrixcurrentcolumn=\count131
+\pgf@matrix@numberofcolumns=\count132
+))
+(C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2006/10/11 v1.18 (rcs-revision 1.4)
+\pgf@nodesepstart=\dimen201
+\pgf@nodesepend=\dimen202
+)) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfarrows.sty
+Package: pgfarrows 2006/10/11 v1.18 (rcs-revision 1.3)
+
+
+Package pgfarrows Warning: This package is obsolete. pgf.sty will load arrow ma
+nagement automatically on input line 17.
+
+) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfnodes.sty
+Package: pgfnodes 2006/10/11 v1.18 (rcs-revision 1.3)
+
+
+Package pgfnodes Warning: This package is obsolete. pgf.sty will load node mana
+gement automatically on input line 17.
+
+) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfautomata.sty
+Package: pgfautomata 2006/10/11 v1.18 (rcs-revision 1.3)
+
+
+Package pgfautomata Warning: This package is obsolete. on input line 17.
+
+\pgf@stateradius=\dimen203
+\pgf@mooreradius=\dimen204
+\pgf@doublethickness=\dimen205
+\pgf@statebackoff=\dimen206
+) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfheaps.sty
+Package: pgfheaps 2006/10/11 v1.18 (rcs-revision 1.3)
+
+
+Package pgfheaps Warning: This package is obsolete. on input line 16.
+
+\pgf@heapx=\dimen207
+\pgf@heapy=\dimen208
+) (C:\_Y\localtexmf\tex\latex\pgf\latex\pgf\compatibility\pgfshade.sty
+Package: pgfshade 2006/10/11 v1.18 (rcs-revision 1.3)
+
+
+Package pgfshade Warning: This package is obsolete. pgf.sty will load shade man
+agement automatically on input line 17.
+
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip48
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks24
+\ex@=\dimen209
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen210
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count133
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count134
+\leftroot@=\count135
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count136
+\DOTSCASE@=\count137
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box43
+\strutbox@=\box44
+\big@size=\dimen211
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count138
+\c@MaxMatrixCols=\count139
+\dotsspace@=\muskip11
+\c@parentequation=\count140
+\dspbrk@lvl=\count141
+\tag@help=\toks25
+\row@=\count142
+\column@=\count143
+\maxfields@=\count144
+\andhelp@=\toks26
+\eqnshift@=\dimen212
+\alignsep@=\dimen213
+\tagshift@=\dimen214
+\tagwidth@=\dimen215
+\totwidth@=\dimen216
+\lineht@=\dimen217
+\@envbody=\toks27
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2002/01/22 v2.2d
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2001/10/25 v2.2f
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip51
+)
+(C:\_Y\localtexmf\tex\latex\Sweave\Sweave.sty
+Package: Sweave 
+
+(C:\_Y\localtexmf\tex\latex\Sweave\upquote.sty
+Package: upquote 2003/08/11 v1.1 Covington's upright-quote modification to verb
+atim and verb
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("C:\Program Files\MiKTeX 2.7\tex\latex\ae\ae.sty"
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\ae\t1aer.fd"
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))))
+(C:\_Y\localtexmf\tex\mysweave.tex
+(C:\_Y\localtexmf\tex\latex\atbeginend\atbeginend.sty)
+\chunkskip=\skip52
+)
+("C:\Program Files\MiKTeX 2.7\tex\latex\lm\lmodern.sty"
+Package: lmodern 2007/01/14 v1.3 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 13.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 14.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 15.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 16.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 17.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 18.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 19.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 20.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 22.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 23.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 24.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 25.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 27.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 28.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 29.
+)
+(C:\_Y\localtexmf\tex\abfont.tex
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\mathpple.sty"
+Package: mathpple 2005/04/12 PSNFSS-v9.2a Palatino w/ Math (WaS) 
+
+
+Package mathpple Warning: This package is to be regarded as obsolete.
+(mathpple)                See the PSNFSS documentation.
+
+) ("C:\Program Files\MiKTeX 2.7\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)))
+(C:\_Y\R\StatPred\doc\TeX-Aux\mindev.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 27.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 27.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+("C:\Program Files\MiKTeX 2.7\tex\context\base\supp-pdf.tex"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count145
+\scratchdimen=\dimen218
+\scratchbox=\box45
+\nofMPsegments=\count146
+\nofMParguments=\count147
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count148
+\MPscratchDim=\dimen219
+\MPnumerator=\count149
+\everyMPtoPDFconversion=\toks31
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count150
+Package backref Info: ** backref set up for natbib ** on input line 27.
+Package hyperref Info: Link coloring ON on input line 27.
+ ("C:\Program Files\MiKTeX 2.7\tex\latex\hyperref\nameref.sty"
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
+)
+\c@section@level=\count151
+)
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+
+(C:\_Y\R\StatPred\doc\TeX-Aux\mindev.out)
+(C:\_Y\R\StatPred\doc\TeX-Aux\mindev.out)
+\@outlinefile=\write6
+\AtBeginShipoutBox=\box46
+LaTeX Font Info:    Try loading font information for OT1+zpple on input line 44
+.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\ot1zpple.fd"
+File: ot1zpple.fd 1999/12/20 Fontinst v1.801 font definitions for OT1/zpple.
+)
+LaTeX Font Info:    Try loading font information for OML+zpple on input line 44
+.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\omlzpple.fd"
+File: omlzpple.fd 1999/12/20 Fontinst v1.801 font definitions for OML/zpple.
+)
+LaTeX Font Info:    Try loading font information for OMS+zpple on input line 44
+.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\omszpple.fd"
+File: omszpple.fd 1999/12/20 Fontinst v1.801 font definitions for OMS/zpple.
+)
+LaTeX Font Info:    Try loading font information for OMX+zpple on input line 44
+.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\omxzpple.fd"
+File: omxzpple.fd 1999/12/20 Fontinst v1.801 font definitions for OMX/zpple.
+)
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 44.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 44.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 44.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 15.0049pt on input line 44.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 10.42007pt on input line 44.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 44.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <17.28> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 53.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 53.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 53.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 12.50409pt on input line 53.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 9.37807pt on input line 53.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.29405pt on input line 53.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 59.
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+
+LaTeX Font Warning: Font shape `T1/aett/b/n' undefined
+(Font)              using `T1/aett/m/n' instead on input line 59.
+
+[1
+
+{C:/Documents and Settings/All Users/Application Data/MiKTeX/2.7/pdftex/config/
+pdftex.map}]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 78.
+ ("C:\Program Files\MiKTeX 2.7\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+<./figs/mindevdev-004.pdf, id=41, 433.62pt x 433.62pt>
+File: ./figs/mindevdev-004.pdf Graphic file (type pdf)
+
+<use ./figs/mindevdev-004.pdf>
+<./figs/mindevdev-005.pdf, id=42, 433.62pt x 433.62pt>
+File: ./figs/mindevdev-005.pdf Graphic file (type pdf)
+
+<use ./figs/mindevdev-005.pdf> [2
+
+ <C:/_Y/R/StatPred/doc/figs/mindevdev-004.pdf> <C:/_Y/R/StatPred/doc/figs/minde
+vdev-005.pdf>]
+<./figs/mindevdev-006.pdf, id=60, 433.62pt x 433.62pt>
+File: ./figs/mindevdev-006.pdf Graphic file (type pdf)
+
+<use ./figs/mindevdev-006.pdf>
+LaTeX Font Info:    Try loading font information for T1+aess on input line 107.
+
+
+("C:\Program Files\MiKTeX 2.7\tex\latex\ae\t1aess.fd"
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+) [3
+
+ <C:/_Y/R/StatPred/doc/figs/mindevdev-006.pdf>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 117.
+
+
+LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
+(Font)              using `T1/aett/m/n' instead on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\<def>-command' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\f@series' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\<def>-command' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\font@name' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\T1/aett/b/n/14.4' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\\' on input line 117.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\<def>-command' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\f@series' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\<def>-command' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\font@name' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\T1/aett/b/n/14.4' on input line 131.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding),
+(hyperref)                removing `\\' on input line 131.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\textcaron+c' on input line 131.
+
+[4
+
+] [5] <./figs/mindevdev-minme.pdf, id=84, 433.62pt x 433.62pt>
+File: ./figs/mindevdev-minme.pdf Graphic file (type pdf)
+
+<use ./figs/mindevdev-minme.pdf> [6
+
+] [7 <C:/_Y/R/StatPred/doc/figs/mindevdev-minme.pdf>] (C:\_Y\R\StatPred\doc\TeX
+-Aux\mindev.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 15548 strings out of 95316
+ 231416 string characters out of 1183726
+ 308481 words of memory out of 1500000
+ 18316 multiletter control sequences out of 110000
+ 41306 words of font info for 105 fonts, out of 1200000 for 2000
+ 14 hyphenation exceptions out of 8191
+ 62i,7n,94p,372b,518s stack positions out of 5000i,500n,10000p,200000b,5000s
+{C:/Program Files/MiKTeX 2.7/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.7/fonts/type1/bluesky/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.7/fon
+ts/type1/bluesky/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/
+cm/cmss12.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmsy10.pfb><C
+:/Program Files/MiKTeX 2.7/fonts/type1/bluesky/cm/cmtt12.pfb><C:/Program Files/
+MiKTeX 2.7/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.7/font
+s/type1/urw/courier/ucrbo8a.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/pa
+latino/uplb8a.pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/palatino/uplr8a.
+pfb><C:/Program Files/MiKTeX 2.7/fonts/type1/urw/palatino/uplri8a.pfb><C:/Progr
+am Files/MiKTeX 2.7/fonts/type1/urw/symbol/usyr.pfb>
+Output written on mindev.pdf (7 pages, 293856 bytes).
+PDF statistics:
+ 143 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 131072)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+

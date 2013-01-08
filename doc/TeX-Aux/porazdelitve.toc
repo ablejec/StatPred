@@ -1,0 +1,10 @@
+\select@language {slovene}
+\contentsline {section}{\numberline {1}Bernoulli-jeva porazdelitev}{2}{section.1}
+\contentsline {section}{\numberline {2}Diskretna enakomerna porazdelitev}{3}{section.2}
+\contentsline {section}{\numberline {3}Binomska porazdelitev}{5}{section.3}
+\contentsline {section}{\numberline {4}Geometrijska porazdelitev}{6}{section.4}
+\contentsline {section}{\numberline {5}Negativna binomska porazdelitev}{7}{section.5}
+\contentsline {section}{\numberline {6}Eksponentna porazdelitev}{8}{section.6}
+\contentsline {section}{\numberline {7}Gama porazdelitev}{9}{section.7}
+\contentsline {section}{\numberline {8}Poissonova porazdelitev}{11}{section.8}
+\contentsline {section}{Dodatek}{12}{section.8}

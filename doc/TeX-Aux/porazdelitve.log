@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdftex 2010.3.14)  16 FEB 2011 00:10
+entering extended mode
+**C:/_Y/R/StatPred/doc/porazdelitve.rnw
+(C:/_Y/R/StatPred/doc/porazdelitve.rnw
+! Undefined control sequence.
+l.7 \documentclass
+                  [a4paper,12pt,slovene]{article}
+? 
+! Emergency stop.
+l.7 \documentclass
+                  [a4paper,12pt,slovene]{article}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

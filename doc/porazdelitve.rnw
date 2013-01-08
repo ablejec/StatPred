@@ -1,0 +1,393 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+%\documentclass[a4paper,12pt,english]{article}
+\documentclass[a4paper,12pt,slovene]{article}
+\newcommand{\SVNRevision}{$Rev:   $}
+\newcommand{\SVNDate}{$Date::            $}
+\usepackage{babel}
+\input{abpkg}
+\input{abcmd}
+\input{abpage}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweave}
+\SweaveOpts{prefix.string=./figs/porazdelitve}
+\SweaveOpts{echo=false}
+\setkeys{Gin}{width=0.7\textwidth}
+\usepackage{lmodern}
+\input{abfont}
+%\SweaveOpts{keep.source=true}
+%\setkeys{Gin}{width=0.8\textwidth} % set graphicx parameter
+% ----------------------------------------------------------------
+\makeindex
+\begin{document}
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+%%% \setkeys{Gin}{width=0.9\textwidth}
+% ----------------------------------------------------------------
+\title{Verjetnostne porazdelitve}
+\author{A. Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+\maketitle
+% ----------------------------------------------------------------
+\begin{abstract}
+Opisanih je nekaj diskrtenih in zveznih verjetnostnih porazdelitev:
+Bernoullijeva, enakomerna diskretna, binomska, Poissonova, geometrijska , negativna binomska (Pascalova), Poissonova (za èas in prostor), eksponentna in gama.
+\end{abstract}
+%% ----------------------------------------------------------------
+\setlength{\parskip}{0pt}
+%\begin{spacing}{0.5}
+\renewcommand{\contentsname}{}
+\tableofcontents
+%\end{spacing}
+\setlength{\parskip}{\baselineskip}
+\pagestyle{plain}
+%% ----------------------------------------------------------------
+<<echo=false,results=hide>>=
+options(width=70)
+#library(Hmisc)
+#library(xlsReadWrite)
+@
+% ----------------------------------------------------------------
+\clearpage
+\section{Bernoulli-jeva porazdelitev}
+Diskretna porazdelitev, ki opisuje verjetnost Bernoullijevega poskusa, ki ima izida \emph{1} in \emph{0} z verjetnostma $p$ in $1-p$:
+
+\begin{displaymath}
+X\sim
+\left( \begin{array}{cc}
+            1 & 0 \\
+            p & 1-p
+\end{array} \right)
+\end{displaymath}
+
+Pogosto pišemo $1-p=q$
+
+$$E(X)=p$$
+$$V(X)=p\cdot(1-p)=pq$$
+
+\vspace{2cm}
+Dve razširitvi:
+
+\begin{itemize}
+  \item razširitev na veè možnih izidov $1, 2, 3, \ldots, m$
+  \item poskus veèkrat ponovimo, tako dobimo zaporedje B. poskusov
+\end{itemize}
+
+\clearpage
+\section{Diskretna enakomerna porazdelitev}
+
+Èe razširimo Bernoullijev poskus z dva na poskus z $m$ enakomožnimi izidi
+$1,2,3,...,m$, ki imajo vsi enako verjetnost $p=1/m$ dobimo diskretno enakomerno porazdelitev
+$$
+X\sim
+\left( \begin{array}{ccccc}
+         1 & 2 & 3 & \ldots& m \\
+         p & p & p & \ldots & p
+       \end{array}
+\right)
+$$
+
+$$E(X)=(m+1)/2$$
+$$V(X)=\frac{m^2-1}{12}$$
+
+<<>>=
+m <- 6
+set.seed(1010)
+@
+
+
+
+Za $m=\Sexpr{m}$ lahko vzamemo kot model igralno kocko:
+$$E(X)=\Sexpr{round((m+1)/2,3)}$$
+$$V(X)=\Sexpr{round((m^2-1)/(12),3)}$$
+
+<<>>=
+n <- 120
+x <- round(runif(n,0.5,6.5))
+x
+catln("Povpreèje:",mean(x))
+catln("Varianca :",var(x))
+@
+
+\begin{center}
+<<dunif,fig=true>>=
+barplot(table(x),main=paste("U( ",m," ),   n =",n))
+abline(h=n/m,col="red",lwd=3 )
+@
+\end{center}
+
+\clearpage
+Iz konènega ali neskonènega zaporedja Bernoullijevih poskusov izpeljemo tri porazdelitve, ki opisujejo zanimive situacije:
+\begin{itemize}
+  \item Število ugodnih izidov v konènem številu poskusov
+  \item Število poskusov do prvega ugodnega izida
+  \item Število poskusov do $r$-tega ugodnega izida
+\end{itemize}
+\clearpage
+\section{Binomska porazdelitev}
+
+$$X\sim B(n,p)$$
+
+$$p_k=p(k)=P(X=k~|~n,p)=\left( \begin{array}{c}
+                              n \\
+                              k
+                            \end{array}\right) p^k(1-p)^{n-k}$$
+
+$$E(X)=np$$
+$$V(X)=np(1-p)$$
+$$1-p=q$$
+Asimetrija: $$\frac{q-p}{\sqrt{npq}}$$
+Splošèenost: $$3+\frac{1-6pq}{npg}$$
+
+<<>>=
+# priprava podatkov
+cex=2
+n <- 30
+p <- 0.2
+r <- 3
+m <- round((r/p)*2)
+Y <- matrix(as.numeric((runif(m*n)>=1-p)),n,m)
+@
+\begin{center}
+<<binom,fig=true>>=
+nf <- layout(matrix(c(1,2),2,1),1,c(4,1))
+#layout.show(nf)
+par(mar=c(3,3,1,2))
+plot(col(Y),n-row(Y),type="n",axes=FALSE,xlab="",ylab="")
+abline(h=0:(n-1),col="grey")
+points(col(Y),n-row(Y),pch=c(1,21)[Y+1],cex=c(.5,cex)[Y+1],col=c(1,1)[Y+1],bg="white")
+axis(1)
+title(paste("B(n = ",m,"  p = ",p, ")    E(X) = np = ",round(n*p,1)))
+rti <- apply(Y,1,sum)
+text(m+2,n:1-1,rti,xpd=TRUE,adj=1)
+par(mar=c(3,3,1,2))
+tbl <- table(rti)
+plot(names(tbl),tbl,type="h",xlim=c(1,m),xlab="",ylab="",axes=FALSE,lwd=5)
+axis(1)
+catln("Povpreèje: ",round(mean(rti,na.rm=TRUE),2))
+catln("Varianca : ",round(var(rti,na.rm=TRUE),2))
+@
+\end{center}
+
+
+\clearpage
+\section{Geometrijska porazdelitev}
+Število poskusov ($k$) do prvega ugodnega izida.
+
+$$X\sim G(p)$$
+
+$$p_k=p(k)=P(X=k~|~p)=p(1-p)^{k-1}, \hspace{1cm} k=1,2,\ldots$$
+
+$$E(X)=\frac{1}{p}$$
+$$V(X)=\frac{1-p}{p^2}$$
+\begin{center}
+<<geom,fig=true>>=
+r=1
+nf <- layout(matrix(c(1,2),2,1),1,c(4,1))
+#layout.show(nf)
+par(mar=c(3,3,1,2))
+plot(col(Y),n-row(Y),type="n",axes=FALSE,xlab="",ylab="")
+abline(h=0:(n-1),col="grey")
+points(col(Y),n-row(Y),pch=c(1,21)[Y+1],cex=c(.5,cex)[Y+1],col=c(1,1)[Y+1],bg="white")
+axis(1)
+title(paste("G( p = ",p, ")    E(X) = 1 / p = ",round(1/p,1)))
+rti <- apply(Y,1,FUN=function(x,r) {which(cumsum(x)==r)[1]},r=r)
+points(rti,n:1-1,pch=16,col="black",cex=cex*.75)
+text(m+2,n:1-1,rti,xpd=TRUE,adj=1)
+par(mar=c(3,3,1,2))
+tbl <- table(rti)
+plot(names(tbl),tbl,type="h",xlim=c(1,m),xlab="",ylab="",axes=FALSE,lwd=5)
+axis(1)
+catln("Povpreèje: ",round(mean(rti,na.rm=TRUE),2))
+catln("Varianca : ",round(var(rti,na.rm=TRUE),2))
+@
+\end{center}
+
+
+\clearpage
+\section{Negativna binomska porazdelitev}
+
+Število poskusov ($k$) do $r$-tega ugodnega izida.
+
+$$X\sim NB(r,p)$$
+
+$$p_k=p(k)=P(X=k~|~r,p)=\left( \begin{array}{c}
+                              k-1 \\
+                              r-1
+                            \end{array}\right) p^r(1-p)^{k-r},\hspace{1cm} k=1,2,\ldots$$
+
+$$E(X)=\frac{r}{p}$$
+$$V(X)=\frac{r(1-p)}{p^2}$$
+
+Geometrijska porazdelitev je poseben primer negativne binomske porazdelitve za $r=1$:
+$$G(p)=NB(1,p)$$
+
+\begin{center}
+
+<<nb,fig=true>>=
+rs <- 3
+for(r in rs){
+nf <- layout(matrix(c(1,2),2,1),1,c(4,1))
+#layout.show(nf)
+par(mar=c(3,3,1,2))
+plot(col(Y),n-row(Y),type="n",axes=FALSE,xlab="",ylab="")
+abline(h=0:(n-1),col="grey")
+points(col(Y),n-row(Y),pch=c(1,21)[Y+1],cex=c(.5,cex)[Y+1],col=c(1,1)[Y+1],bg="white")
+axis(1)
+title(paste("NB(r = ",r,"  p = ",p, ")    E(X) = r / p = ",round(r/p,1)))
+rti <- apply(Y,1,FUN=function(x,r) {which(cumsum(x)==r)[1]},r=r)
+points(rti,n:1-1,pch=16,col="black",cex=cex*.75)
+text(m+2,n:1-1,rti,xpd=TRUE,adj=1)
+par(mar=c(3,3,1,2))
+tbl <- table(rti)
+plot(names(tbl),tbl,type="h",xlim=c(1,m),xlab="",ylab="",axes=FALSE,lwd=5)
+axis(1)
+catln("Povpreèje: ",round(mean(rti,na.rm=TRUE),2))
+catln("Varianca : ",round(var(rti,na.rm=TRUE),2))
+}
+@
+
+\end{center}
+
+
+
+\clearpage
+\section{Eksponentna porazdelitev}
+\emph{Èakalni èas do prvega dogodka}, pri znanem povpreènem preživetvenem èasu $\beta=1/\lambda$ opisuje eksponentna porazdelitev ($\lambda$ je število dogodkov v enoti èasa, 'rate' ):
+
+$$f(T)=\lambda e^{-\lambda T}=\frac{1}{\beta} e^{-\frac{T}{\beta}}$$
+
+$$E(T)=\frac{1}{\lambda}=\beta$$
+$$V(T)=\frac{1}{\lambda^2}=\beta ^2$$
+Kumulativna porazdelitev (porazdelitvena funkcija)
+$$F(t)=P(T\le t)= 1-e^{-\lambda t}$$
+Krivulja preživetja:
+$$P(T>s+t|T>s)=P(T>t)=\overline{F}(t)=1-F(t)=e^{-\lambda t}$$
+
+\begin{center}
+<<exp,fig=TRUE,echo=FALSE>>=
+r <- 1
+lambda <- 5
+beta <- 1/lambda
+T <- seq(0,3,0.05)
+fT=dexp(T,lambda)
+rT=rexp(1000,lambda)
+main <- substitute(paste("Exp( ",lambda," = ",ll," )"),list(ll=lambda))
+hist(rT,prob=TRUE,col="lightblue",ylim=range(fT),xlab="T",main=main)
+lines(T,fT,type="b",col="red",lwd=3)
+catln(
+"Beta     :",beta,"\n",
+"Lambda   :",lambda,"\n",
+"Povpreèje:",mean(rT),"\n",
+"Varianca :",var(rT))
+@
+\end{center}
+
+\clearpage
+\section{Gama porazdelitev}
+
+\emph{Èakalni èas do r-tega dogodka}, pri znanem povpreènem preživetvenem
+èasu $\beta$.
+
+$$f(T|r,\beta)=\frac{1}{\Gamma(r)\beta^r} T^{r-1} e^{-\frac{T}{\beta}}$$
+
+$$E(T)=r \beta$$
+$$V(T)=r \beta ^2$$
+
+Preživetveni èas $\beta$ je v zvezi s številom dogodkov v enoti èasa $\lambda$:
+$$\beta= 1 / \lambda.$$
+
+Gostoto lahko zapišemo tudi takole:
+
+$$f(T|r,\lambda)=\frac{\lambda^r T^{r-1} e^{-T \lambda}}{\Gamma(r)} $$
+
+
+\begin{center}
+<<gama,fig=TRUE,echo=FALSE>>=
+r <- 4
+lambda <- 5
+beta <- 1/lambda
+T <- seq(0,3,0.05)
+fT=dgamma(T,r,scale=beta)
+rT=rgamma(1000,r,scale=beta)
+hist(rT,prob=TRUE,col="lightblue",xlab="T",ylim=range(fT),main=paste("gama(",r,",",lambda,")",sep=""))
+lines(T,fT,type="b",col="red",lwd=3)
+catln(
+"r        :",r,"\n",
+"Beta     :",beta,"\n",
+"Lambda   :",lambda,"\n",
+"Povpreèje:",mean(rT),"\n",
+"Varianca :",var(rT))
+@
+\end{center}
+Eksponentna porazdelitev je Gama porazdelitev za $r=1$.
+\clearpage
+\section{Poissonova porazdelitev}
+
+Poissonova porazdelitev opisuje porazdelitev števila dogodkov v èasu (ali prostoru), pri nekem
+povpreènem številu dogodkov ($\lambda$) v enoti èasa (ali prostora) .
+
+$$P [(N(t+ \tau) - N(t)) = k] = \frac{(\lambda
+\tau)^k e^{-\lambda \tau} }{k!} \qquad k= 0,1,\ldots$$,
+kjer $N(t + \tau) - N(t)$
+predstavlja število dogodkov v intervalu $[t,t+\tau]$.
+
+Èe je pri Binomski porazdelitvi
+
+\begin{itemize}
+  \item $p$ majhen (neznan)
+  \item $n$ zelo velik (neznan)
+  \item prièakovana vrednost $n\cdot p=\lambda$ konèen in znan
+\end{itemize}
+
+lahko verjetnost za  število ugodnih izidov $k= 0,1,\ldots$ opišemo z izrazom
+
+$$ P(k)=\frac{ (\lambda)^k e^{-\lambda }}{k!} \qquad k= 0,1,\ldots$$
+
+$$E(X)=\lambda$$
+$$V(X)=\lambda$$
+
+\begin{center}
+\setkeys{Gin}{width=1.0\textwidth} % set graphicx parameter
+<<Poisson,fig=true>>=
+k <- 0:18
+lambdas <- c(1,2,4,8)
+if(length(lambdas>1)) par(mfrow=c(2,2))
+for(lambda in lambdas) 
+barplot(dpois(k,lambda),names.arg=k,space=0.5,
+main=paste(expression(lambda)," = ",lambda),col="lightblue")
+@
+\end{center}
+
+
+
+
+\appendix
+\addcontentsline{toc}{section}{\appendixname}
+\clearpage
+\section*{SessionInfo}
+<<sessionInfo,results=tex,echo=false>>=
+cat(win.version(),"\n")
+toLatex(sessionInfo())
+@
+
+% ----------------------------------------------------------------
+%\bibliographystyle{amsplain}
+%\bibliography{}
+\end{document}
+% ----------------------------------------------------------------

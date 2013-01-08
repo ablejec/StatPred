@@ -1,0 +1,38 @@
+% -*- TeX:Rnw:si -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+%\documentclass[a4paper,12pt,english]{article}
+\documentclass[a4paper,12pt,slovene]{article}
+\newcommand{\SVNRevision}{$Rev:   $}
+\newcommand{\SVNDate}{$Date::            $}
+\usepackage{babel}
+\input{abpkg}
+\input{abcmd}
+\input{abpage}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweave}
+\SweaveOpts{prefix.string=./figs/mindevdev}
+%\SweaveOpts{echo=false}
+\setkeys{Gin}{width=0.7\textwidth}
+\usepackage{lmodern}
+\input{abfont}
+%\SweaveOpts{keep.source=true}
+%\setkeys{Gin}{width=0.8\textwidth} % set graphicx parameter
+% ----------------------------------------------------------------
+
+\begin{document}
+
+\section{Minimum vsote absolutnih odklonov}
+
+\newcommand{\sad}[1]{\sum_{#1} |x-a|}
+\newcommand{\dsad}[1]{frac{d \sad{#1}}{da}
+
+\sad{}
+
+
+\end{document}

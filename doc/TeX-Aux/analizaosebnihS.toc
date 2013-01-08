@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {slovene}
+\beamer@sectionintoc {1}{Vnos podatkov}{2}{0}{1}
+\beamer@sectionintoc {2}{Pregled osnovnih podatkov }{4}{0}{2}
+\beamer@sectionintoc {3}{Pregled urejenih podatkov}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{Opisna statistika}{12}{0}{3}
+\beamer@subsectionintoc {3}{2}{Porazdelitve podatkov}{14}{0}{3}
+\beamer@sectionintoc {4}{Testiranje hipotez}{16}{0}{4}
+\beamer@subsectionintoc {4}{1}{Ali so fantje ve\v cji od deklet?}{16}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ali so fantje tezji od deklet?}{26}{0}{4}
+\beamer@sectionintoc {5}{Kontingenca}{38}{0}{5}
+\beamer@subsectionintoc {5}{1}{Asociacija ( $2 \times 2$ )}{43}{0}{5}
+\beamer@sectionintoc {6}{Korelacija in regresija}{45}{0}{6}

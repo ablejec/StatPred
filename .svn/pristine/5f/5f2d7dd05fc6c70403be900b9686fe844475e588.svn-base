@@ -1,0 +1,339 @@
+% -*- TeX:Rnw -*-
+% ----------------------------------------------------------------
+% .R Sweave file  ************************************************
+% ----------------------------------------------------------------
+%%
+% \VignetteIndexEntry{}
+% \VignetteDepends{}
+% \VignettePackage{}
+\documentclass[a4paper,12pt]{article}
+%\usepackage[slovene]{babel}
+\newcommand{\SVNRevision}{$ $Rev$ $}
+%\newcommand{\SVNDate}{$ $Date::             $ $}
+\newcommand{\SVNId}{$ $Id$ $}
+\input{abpkg}
+\input{abcmd}
+\input{abpage}
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage{Sweave}
+\input{mysweave}
+\SweaveOpts{eps=false,prefix.string=./figs/vzorcenje,concordance=true}
+%\SweaveOpts{echo=false}
+\setkeys{Gin}{width=0.8\textwidth}  % set graphicx parameter
+%\SweaveOpts{keep.source=true}
+\usepackage{lmodern}
+\input{abfont}
+
+% ----------------------------------------------------------------
+\begin{document}
+%% Sweave settings for includegraphics default plot size (Sweave default is 0.8)
+%% notice this must be after begin{document}
+%%% \setkeys{Gin}{width=0.9\textwidth}
+% ----------------------------------------------------------------
+\title{Statistièno naèrtovanje poskusov\\Analize primerov z R}
+\author{A. Blejec}
+%\address{}%
+%\email{}%
+%
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+\maketitle
+% ----------------------------------------------------------------
+%\begin{abstract}
+%
+%\end{abstract}
+% ----------------------------------------------------------------
+\tableofcontents
+<<Author:>>=
+###############################################
+##                                           ##
+## (c) Andrej Blejec (andrej.blejec@nib.si)  ##
+##                                           ##
+###############################################
+@
+<<initialize,echo=false,results=hide>>=
+options(width=70)
+library(Hmisc)
+#library(xlsReadWrite)
+@
+
+\section{Enostavno sluèajnostno vzorèenje}
+
+Pripravimo podatke za primer s strani 73
+
+<<priprava podatkov str. 73>>=
+y <- c(
+ 8, 7, 6, 5, 7,
+ 8, 9, 7, 9,12,
+10,13,18,16,12,
+15,13,14,17,13,
+ 7, 6, 5, 4, 3,
+12, 5, 7, 6, 9,
+ 8, 7, 9, 8, 10)
+ n <- 5
+A <- factor(rep(paste("A",1:7,sep=""),each=n))
+data <- data.frame(A,id=rep(1:n,7),y)
+reshape(data,idvar="A",timevar="id",direction="wide")
+@
+
+Preverimo povzetke
+<<vsote in povpreèja>>=
+aggregate(y,by=list(A),sum)
+aggregate(y,by=list(A),mean)
+@
+
+\subsection{Analiza variance}
+
+<<>>=
+aovFit <- aov(y~A,data=data)
+aovFit
+aovTable <- summary(aovFit)
+aovTable
+@
+
+Diagnostiène slike so prikazane na sliki \ref{fig:aovDIag}
+\begin{figure}[!hbt]
+\begin{center}
+  % Requires \usepackage{graphicx}
+<<fig=true>>=
+par(mfrow=c(2,2))
+plot(aovFit)
+@
+  \caption{DIagnostiène slike za analizo variance}
+  \label{fig:aovDIag}
+\end{center}
+\end{figure}
+
+
+
+Iz tabele za analizo variance lahko izlušèimo posamezne dele tabele:
+
+<<aov table structure>>=
+str(aovTable[[1]])
+@
+Tako lahko izlušèimo varianco ostanka in število ponovitev
+<<se2>>=
+(se2 <- aovTable[[1]]$'Mean Sq'[2])
+df <- (aovTable[[1]])$"Df"
+(n <- df[2]/(df[1]+1)+1)
+@
+
+$$s_e^2=\Sexpr{round(se2,3)}$$
+Pripravimo lahko tudi uporabne povzetke povpreèij in uèinkov.
+<<>>=
+means <- model.tables(aovFit,"means",se=TRUE)
+means
+@
+
+Združena standardna napaka za primerjavo razlik povpreèij je v posebnem primeru enakega števila ponovitev poskusa
+
+<<>>=
+sqrt(2*se2/n)
+@
+
+Iz tabele povpreèij lahko izraèunamo uèinke, to je odstopanja povpreèij skupin od skupnega povpreèja
+<<effects>>=
+ucinek <- means$tables$A-means$tables$'Grand mean'
+ucinek
+@
+
+Standardna napaka uèinkov
+<<se(ucinkov)>>=
+sqrt(se2/n)
+@
+
+Lahko pa tudi takole:
+<<>>=
+effects <- model.tables(aovFit,"effects",se=TRUE)
+effects
+@
+
+\subsubsection{Tukey HSD}
+
+<<Tukey HSD>>=
+hsd <- TukeyHSD(aovFit, ordered = TRUE)
+hsd$A <- hsd$A[order(hsd$A[,"diff"],decreasing=TRUE),]
+hsd
+@
+
+Rezultat bolje prikaže slika \ref{fig:TukeyHSD}
+
+\begin{figure}[!hbt]
+\begin{center}
+  % Requires \usepackage{graphicx}
+<<TukeyHSD,fig=true>>=
+plot(hsd,las=1)
+@
+  \caption{Intervali zaupanja za Tukey HSD}
+  \label{fig:TukeyHSD}
+\end{center}
+\end{figure}
+
+\clearpage
+\subsection{Linearni model}
+
+Ker nimamo nobenega kontrolnega nivoja, želimo analizo brez doloèitve zaèetne vrednosti.
+<<linearni model>>=
+lmFit <- lm(y~0+A,data=data)
+lmFit
+@
+
+Analiza koeficientov ni posebno smiselna, saj nas zanima primerjava na skupno povpreèje, ali pa razlike med stanji.
+
+Analiza s korekcijo na skupno povpreèje:
+
+<<linearni model>>=
+lmFit <- lm(y-mean(y)~0+A,data=data)
+lmFit
+@
+
+<<>>=
+summary(lmFit)
+@
+
+Primerjava razlik med skupinami
+<<linearni model>>=
+lmFit2 <- lm(y~0+A,data=data)
+lmFit2
+@
+
+
+<<>>=
+summary(lmFit2)
+@
+
+Matrika primerjav vseh skupin med seboj
+<<>>=
+
+ m <- nrow(data)/n
+ mm<-diag(m)
+ contr<-matrix(
+ unlist(sapply(1:(m-1),function(j) sapply(j:(m-1),function(i) mm[,i+1]-mm[,j]))),
+ nrow=m)
+ contr
+@
+
+Primerjave med skupinami kažejo razlike med povpreèji posameznih skupin. Skupine so preurejene glede na narašèajoèe vrednosti povpreèij. Grafièni prikaz je na Sliki \ref{fig:estimates}
+
+<<>>=
+d <- matrix(NA,m,m)
+ordr <- order(lmFit2$coefficients)
+d[lower.tri(d)] <- lmFit2$coefficients[ordr]%*%contr
+dimnames(d) <- list(levels(A)[ordr],levels(A)[ordr])
+d <- t(d)[,m:1]
+print(d,na.print="")
+@
+
+
+
+\begin{figure}[!hbt]
+\begin{center}
+  % Requires \usepackage{graphicx}
+<<fig=true>>=
+dx <- 10
+gm <- 1:m
+gm[ordr] <- 1:m
+xGroup <- rep(gm*dx,each=n)-n/2
+at <- rep((1:n),m)+xGroup
+plot(at,y,axes=FALSE,xlab="Group")
+points(at,aov(lmFit2)$fitted.values,col="red",pch="_",cex=1.2)
+axis(2)
+segments(at,aov(lmFit2)$fitted.values,at,y,col="blue")
+#abline(v=seq(0.5,dx*m+.5,dx),col="grey")
+mtext(levels(A),side=1,at=unique(xGroup)+n/2)
+@
+  \caption{Podatki ($\circ$), ocenjene vrednosti v skupinah (vodoravne èrte) in odkloni (navpiène èrte)}
+  \label{fig:estimates}
+\end{center}
+\end{figure}
+
+
+ \subsubsection{Tukey HSD}
+Tukey HSD postavi enotno mejo za najmanjšo znaèilno razliko med povpreèji skupin.
+
+<<>>=
+alpha <- 0.05
+df.residual <- aov(lmFit2)$df.residual
+q <- qtukey(1-alpha,m,df=df.residual)
+q
+se.ybar <- sqrt(summary(aov(lmFit2))[[1]]$'Mean Sq'[2]/n)
+W <- q*se.ybar
+W
+@
+
+S tveganjem $\alpha = \Sexpr{alpha}$ je resnièno znaèilna razlika $W=\Sexpr{round(W,2)}$.
+
+Poglejmo, katere skupine so znaèilno razliène:
+
+<<>>=
+sigDif <- d>W
+print((sigDif+0),na.print="")
+@
+
+
+% ----------------------------------------------------------------
+%\bibliographystyle{chicago}
+%\addcontentsline{toc}{section}{\refname}
+%\bibliography{ab-general}
+%--------------------------------------------------------------
+
+%\clearpage
+%\appendix
+%\phantomsection\addcontentsline{toc}{section}{\appendixname}
+%\section{\R\ funkcije}
+%\input{}
+
+\clearpage
+\section*{SessionInfo}
+{\small
+<<sessionInfo,results=tex,echo=false>>=
+cat(win.version(),"\n")
+toLatex(sessionInfo())
+cat("Project path:\\verb'",dirname(getwd()),"'\n")
+@
+}
+
+\subsection*{View as vignette}
+Project files can be viewed by pasting this code to \R\ console:\\
+\begin{Schunk}
+\begin{Sinput}
+<<echo=false,results=tex>>=
+mainFile <- commandArgs(trailingOnly = TRUE)
+mainFile <- strsplit(mainFile,'.',fixed=TRUE)[[1]][1]
+projectName <- rev((strsplit(dirname(getwd()), "/"))[[1]])[1]
+cat('> projectName <-"',projectName,'"; ',sep="")
+cat(' mainFile <-"',mainFile,'"',sep="")
+@
+
+\end{Sinput}
+\end{Schunk}
+<<vignette,eval=false>>=
+commandArgs()
+library(tkWidgets)
+# getrootpath <- function() {
+# fp <- (strsplit(getwd(), "/"))[[1]]
+# file <- file.path(paste(fp[-length(fp)], collapse = "/"))
+# return(file)
+# }
+# fileName <- function(name="bla",ext="PDF") paste(name,ext,sep=".")
+ openPDF(file.path(dirname(getwd()),"doc",paste(mainFile,"PDF",sep=".")))
+ viewVignette("viewVignette", projectName, file.path("../doc",paste(mainFile,"RNW",sep=".")))
+
+@
+
+\vfill \hrule \vspace{2pt} \footnotesize{
+Revision \SVNId\hfill (c) A. Blejec%\input{../_COPYRIGHT.}
+%\SVNRevision ~/~ \SVNDate
+}
+
+
+
+\end{document}
+% ----------------------------------------------------------------
